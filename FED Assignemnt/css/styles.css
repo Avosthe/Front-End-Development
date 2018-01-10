@@ -1,3 +1,39 @@
-﻿body
-{
+﻿body {
+    background: url("/images/burger.jpg");
+    background-attachment: fixed;
+    text-align: center;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#start {
+    width: 80%;
+    padding-top: 100vh;
+    height: 1000px;
+    
+}
+
+nav {
+    text-align: center;
+    background-color:transparent;
+    width: 75%;
+    position: fixed;
+    margin: 0 auto;
+    
+}
+
+nav a {
+    display: inline-block;
+    padding: 18px 30px;
+    font: bold 12px Arial;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-top:2px solid transparent;
+}
+
+nav a:hover{
+    border-top:2px solid #b4953f;
+    color:#b4953f;
 }
