@@ -1,5 +1,5 @@
 ﻿body {
-    background: url("/images/index_bg2.jpg");
+    background: url("../images/index_bg2.jpg");
     background-attachment: fixed;
     text-align: center;
     margin: auto;
@@ -8,7 +8,7 @@
 }
 
 #start {
-    background: url("/images/index_bg.png");
+    background: url("../images/index_bg.png");
     background-attachment: fixed;
     text-align: center;
     margin: auto;
