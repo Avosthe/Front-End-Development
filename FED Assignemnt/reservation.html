@@ -5,18 +5,24 @@
     <meta charset="utf-8" />
     <title>Make a Reservations</title>
     <link rel="stylesheet" href="/Darren/css/reservationstyles.css" />
+    <script src="/Darren/js/reservationScript.js" ></script>
 </head>
 <body>
+    <div id="test"></div>
     <p id="header">
         Make a Reservation With Us!
     </p>
-    <div id="button1">
-        <div class="bg"></div>
-        <p>Make a Call to Us</p>
-    </div>
+    <a href="contact.html" id="callReserve" onclick="call()">
+        <div id="button1">
+            <div class="bg"></div>
+            <p>Make a Call to Us</p>
+        </div>
+    </a>
+    <a href="reserveform.html" id="formReserve">
     <div id="button2">
         <div class="bg"></div>
         <p>Reserve Online</p>
     </div>
+    </a>
 </body>
 </html>

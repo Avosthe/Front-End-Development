@@ -1,16 +1,35 @@
-﻿body
-{
+﻿@font-face {
+    font-family: 'Simplifica';
+    src: url("SIMPLIFICA Typeface.ttf") format('truetype');
+}
+
+
+body {
     background: url("../images/reservation_bg2.jpeg");
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#test
+{
     width:100vw;
     height:100vh;
-    margin:0
+    position:absolute;
+    opacity:0.7;
+    background:black;
+    z-index:-1;
 }
 #header
 {
-    
+    background: transparent;
     text-align:center;
     color:#b4953f;
-    font:bold 36px Avant Garde;
+    font:bold 110px Simplifica;
 }
 
 #button1 {
@@ -56,3 +75,4 @@ div .bg {
     z-index: -1;
     
 }
+
