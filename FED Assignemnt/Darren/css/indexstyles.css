@@ -1,5 +1,5 @@
 ﻿body {
-    background: url("/images/index_bg2.jpg");
+    background: url("../images/index_bg2.jpg");
     background-attachment: fixed;
     text-align: center;
     margin: auto;
@@ -7,45 +7,50 @@
     background-size: cover;
 }
 
-#start{
-    background: url("/images/index_bg.png");
+#start {
+    background: url("../images/index_bg.png");
     background-attachment: fixed;
     text-align: center;
     margin: auto;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
-    height:100vh;
+    height: 100vh;
 }
+
 #filler {
     width: 80%;
     height: 1000px;
 }
 
-#resize{
-    height:100vh;
-    width:100vw;
+#resize {
+    height: 100vh;
+    width: 100vw;
 }
 
 nav {
     text-align: center;
-    background-color:transparent;
-    width: 75%;
-    position: fixed;
+    background-color: black;
+    width: auto;
+    border: 1px solid #010101;
     margin: 0 auto;
 }
 
 nav a {
-    display: inline-block;
+    display: inline-table;
     padding: 18px 30px;
     font: bold 12px Arial;
     color: white;
     text-transform: uppercase;
     text-decoration: none;
-    border-top:2px solid transparent;
+    border-top: 2px solid transparent;
+    background-color: black;
+    opacity: 0.5;
+    width:auto;
 }
 
-nav a:hover{
-    border-top:2px solid #b4953f;
-    color:#b4953f;
+nav a:hover {
+    border-top: 2px solid #b4953f;
+    opacity: 1;
+    color: #b4953f;
 }
