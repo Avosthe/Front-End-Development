@@ -7,7 +7,17 @@
     background-size: cover;
 }
 
-#start {
+#start{
+    background: url("/images/index_bg.png");
+    background-attachment: fixed;
+    text-align: center;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    height:100vh;
+}
+#filler {
     width: 80%;
     height: 1000px;
 }
