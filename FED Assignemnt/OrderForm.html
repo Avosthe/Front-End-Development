@@ -39,13 +39,12 @@
                     Time:*<br /><input type="time" name="Time" min="10:00:00" max="22:00:00" step="15" placeholder="10:00:00" required />
                 </label>
             </fieldset>
-            <input type="submit" value="Submit" onclick="submit()" />
-            <input type="reset" value="Reset" />
         </p>
     </form>
-    <button onclick="submit()">truck</button>
+    <button onclick="submit()">submit</button>
+    <input type="reset" value="Reset" onclick="reload()" />
     <div id="container">
-        <div id="animate">Form is proccessing</div>
+        <div id="animate"></div>
     </div>
 </body>
 </html>
