@@ -1,0 +1,43 @@
+﻿body {
+    background: url("/images/index_bg2.jpg");
+    background-attachment: fixed;
+    text-align: center;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form{
+    display:inline-block;
+    color:aliceblue;
+}
+
+nav a {
+    display: inline-block;
+    padding: 18px 30px;
+    font: bold 12px Arial;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-top: 2px solid transparent;
+}
+
+#animate {
+    background-image: url(http://www.iconsplace.com/icons/preview/white/truck-2256.png);
+    position: absolute;
+    width: 64px;
+    height: 65px;
+    margin-left: 10px;
+    animation-iteration-count:3;
+}
+
+#container {
+    width: 435px;
+    height: 65px;
+    position: relative;
+    display:inline-block;
+    color:royalblue;
+    font-size:12px;
+}
+
+
