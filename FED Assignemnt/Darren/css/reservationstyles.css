@@ -10,9 +10,7 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
-    position: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+    position:fixed;
 }
 
 #test
@@ -60,10 +58,11 @@ body {
     
 }
 
-#button1:hover, #button2:hover
+#button1:hover, #button2:hover 
 {
-    border: 2px solid #b4953f;
-    color: #b4953f;
+    border: 2px solid black;
+    background: #b4953f;
+    color: black;
 }
 
 div .bg {

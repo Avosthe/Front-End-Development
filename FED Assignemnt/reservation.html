@@ -5,14 +5,21 @@
     <meta charset="utf-8" />
     <title>Make a Reservations</title>
     <link rel="stylesheet" href="/Darren/css/reservationstyles.css" />
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
     <script src="/Darren/js/reservationScript.js" ></script>
 </head>
 <body>
+    <div w3-include-html="header.html"></div>
+
+    <script>
+        w3.includeHTML();
+    </script>
+
     <div id="test"></div>
     <p id="header">
         Make a Reservation With Us!
     </p>
-    <a href="contact.html" id="callReserve" onclick="call()">
+    <a href="contact.html" id="callReserve">
         <div id="button1">
             <div class="bg"></div>
             <p>Make a Call to Us</p>
