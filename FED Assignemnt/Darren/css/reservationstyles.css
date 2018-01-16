@@ -5,7 +5,7 @@
 
 
 body {
-    background: url("../images/reservation_bg2.jpeg");
+    background: url("../images/reservation_bg.jpg");
     width: 100vw;
     height: 100vh;
     margin: 0;
@@ -30,7 +30,7 @@ body {
     font:bold 110px Simplifica;
 }
 
-#button1 {
+#button1 {  
     border: 2px solid white;
     text-align: center;
     font: bold 20px arial;
@@ -38,7 +38,7 @@ body {
     position: absolute;
     width: 300px;
     height: 50px;
-    top: 52%;
+    top: 60%;
     left: 50%;
     margin: -100px 0 0 -150px;
     
@@ -52,7 +52,7 @@ body {
     position: absolute;
     width: 300px;
     height: 50px;
-    bottom: 37%;
+    bottom: 33%;
     left: 50%;
     margin: -100px 0 0 -150px;
     

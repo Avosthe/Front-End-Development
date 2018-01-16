@@ -1,9 +1,10 @@
 ﻿
+
 nav {
     text-align: center;
     background-color: black;
     width: auto;
-    border: 1px solid #010101;
+    border: 1px solid transparent;
     margin: 0 auto;
 }
 
@@ -15,13 +16,14 @@ nav a {
     text-transform: uppercase;
     text-decoration: none;
     border-top: 2px solid transparent;
-    background-color: black;
+    background-color: transparent;
     opacity: 0.5;
-    width: auto;
+    
 }
 
 nav a:hover {
     border-top: 2px solid #b4953f;
     opacity: 1;
     color: #b4953f;
+    transition: border-top 0.3s linear;
 }
