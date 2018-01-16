@@ -7,49 +7,88 @@
     <link rel="stylesheet" href="/Darren/css/contact.css" />
     <title></title>
 </head>
-<body>
+<body onload="test()">
     <div w3-include-html="header.html"></div>
 
     <script>
         w3.includeHTML();
     </script>
-    <div>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="delivery.html">Delivery</a>
-        <a href="reservation.html">Reservation</a>
-        <a href="joinus.html">Join Us</a>
-        <a href="locate.html">Locate Us</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact Us</a>
-    </nav>
-    </div>
-    <div id="main">
-        <section>
-            <table>
-                <tr>
-                    <td>
-                        <u>Contact Us</u>
-                    </td>
-                    <td></td>
-                    <td>
-                        Email Us
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="Darren/images/index_bg.png" width="20" height="20" />+65 9728 2794
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="Darren/images/index_bg2.jpg" width="20" height="20" />+65 9728 2794
-                    </td>
-                </tr>
-            </table>
-        </section>
-    </div>
 
+    <div id="main">
+        <div id="map"></div>
+
+        <section>
+            <div id="contactinfo">
+                <p>
+                    <u>Contact Us</u>
+                </p>
+                <p>
+                    <a href="tel:62246235"><img src="Darren/images/phoneicon.png" width="20" height="20" /> (+65) 6224 6235</a>
+                </p>
+                <p>
+                    <u>Email Us</u>
+                </p>
+                <p>
+                    <a href="email:burgerwebsite@website.com"><img src="Darren/images/emailicon.png" width="20" height="20" />  burgerwebsite@website.com</a>
+                </p>
+                <p>
+                    <u>Find Us:</u>
+                </p>
+                <p>
+                    <a href="https://www.google.com.sg/maps/dir//Block+112,+Potong+Pasir+Avenue+1,+%2307-646,+R+%26+W+Advertising+Centre,+Singapore+023628/@1.3
+                             374979,103.8637212,18z/data=!4m9!4m8!1m0!1m5!1m1!1s0x31da17770fc86fd9:0xdae57c941003da34!2m2!1d103.8644969!2d1.3374979!3e3">
+                        <img src="Darren/images/address.png" width="20" height="20" />  BLK 112 Potong Pasir Ave 1 #07-02<br /> Singapore 023628
+                    </a>
+                </p>
+            </div>
+            <div id="ophours">
+                <u>OPENING HOURS</u>
+                <table>
+                    <tr>
+                        <td>Monday</td>
+                        <td><div class="line grow"></div></td>
+                        <td>1000 - 2100</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td><div class="line grow"></div></td>
+                        <td>1000 - 2100</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td><div class="line grow"></div></td>
+                        <td>1000 - 2100</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td><div class="line grow"></div></td>
+                        <td>1000 - 2100</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td><div class="line grow"></div></td>
+                        <td>1000 - 2100</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td><div class="line grow2"></div></td>
+                        <td>1100 - 1600</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td><div class="line grow3"></div></td>
+                        <td>1100 - 1500</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="time"></div>
+        </section>
+
+    </div>
+    <script src="Darren/js/contactScript.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPez_bQIWUmW0VVCTQxUB_qs3b6Fu56W0&callback=initMap"></script>
 </body>
+
+
 </html>

@@ -5,64 +5,127 @@
 
 body {
     background: url("../images/index_bg2.jpg");
-    margin: 0;
-    padding: 0;
+    margin-top: 0;
     z-index:-2;
     background-size:cover;
     
 }
-    
-#main{
-    margin:auto;
-    background:#202020;
-    width:70%;
-    color:white;
-    font:bold 24px Simplifica;
+
+#main {
+    margin: auto;
+    background: #202020;
+    width: 75%;
+    color: darkgoldenrod;
+    font: bold 24px Simplifica;
+    overflow: auto;
 }
 
-td{
-    padding: 10px;
+#contactinfo{
+    padding:50px 50px 30px 100px;
+    float: left;
 }
 
-table{
-    padding-left:200px;
-    padding: 100px;
+a{
+    font-style:normal;
+    text-decoration:none;
+    color: white;
 }
 
+a:hover{
+    color:darkgoldenrod;
+}
 
-
-
-
-
-
-
-
-
-
-
-nav {
-    text-align: center;
-    background-color: black;
+#map {
     width: 100%;
-    border: 1px solid transparent;
-    margin: 0 auto;
+    height: 20vw;
+    background-color: grey;
+    
 }
 
-    nav a {
-        display: inline-table;
-        padding: 18px 30px;
-        font: bold 12px Arial;
-        color: white;
-        text-transform: uppercase;
-        text-decoration: none;
-        border-top: 2px solid transparent;
-        background-color: transparent;
-        opacity: 0.5;
+#ophours{
+    
+    padding: 50px 70px 20px 100px;
+    float:right;
+}
+
+table tr td {
+    padding: 5px;
+}
+
+td {
+    width: 200px;
+    color: darkgoldenrod;
+}
+
+table {
+    border-collapse: collapse;
+    text-align:center;
+}
+
+div#ophours u{
+    padding-left:270px;
+}
+
+.grow {
+    height: 2px;
+    background-color: white;
+    animation: 3s linegrow;
+    width: 200px;
+}
+
+.grow2 {
+    height: 2px;
+    background-color: white;
+    animation: 3s linegrow2;
+    width: 100px;
+}
+
+.grow3 {
+    height: 2px;
+    background-color: white;
+    animation: 3s linegrow3;
+    width: 70px;
+}
+
+#time {
+    padding-right: 50px;
+    padding-bottom: 50px;
+    clear: both;
+    float: right;
+    font-size: 56px;
+    color: darkgoldenrod;
+}
+
+@keyframes linegrow {
+    0% {
+        width:0px;
     }
 
-        nav a:hover {
-            border-top: 2px solid #b4953f;
-            opacity: 1;
-            color: #b4953f;
-            transition: border-top 0.3s linear;
-        }
+    100% {
+        width:200px;
+    }
+}
+
+@keyframes linegrow2 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 91px;
+    }
+}
+
+@keyframes linegrow3 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 73px;
+    }
+}
+
+nav a{
+    background-color:white;
+}
