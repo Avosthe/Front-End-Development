@@ -7,42 +7,32 @@
     <meta charset="utf-8" />
     <title>Order Form</title>
 </head>
-<body>
-    <div id="start">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="burgers.html">Burgers</a>
-            <a href="sides.html">Sides</a>
-            <a href="drinks.html">Drinks</a>
-            <a href="OrderForm.html">Takeaway</a>
-            <a href="contact.html">Contact Us</a>
-        </nav>
-    </div>
-    <form>
+<body onload="date(); time();">
+    <form id="form" onsubmit="lul();return false;">
         <h1>Order Form</h1>
         <p>
-            <img src="images/deliveryguy.jpg" alt="delivery man" style="width:50px;height:50px;"/>
+            <img src="images/deliveryguy.jpg" alt="delivery man" style="width:50px;height:50px;" />
             <input type="radio" value="delivery" name="order" required />Delivery
             <input type="radio" value="pickup" name="order" />Pick Up
-            <img src="images/takeaway.jpg" alt="takeaway" style="background:white;width:50px;height:50px;"/>
+            <img src="images/takeaway.jpg" alt="takeaway" style="background:white;width:50px;height:50px;" />
         </p>
         <p>
-            <fieldset id="form">
+            <fieldset style="width:200px;">
                 <legend>Deliver to:*</legend>
-                <label style="width:500px">
-                    Name:*<br /><input type="text" name="name" required /><br />
-                    Address:*<br /><textarea cols="30" rows="2" required></textarea><br />
-                    Postal Code:*<br /><input type="text" maxlength="6" numeric="6" required /><br />
-                    Phone #:*<br /><input type="text" pattern="[689][0-9]{7}" required /><br />
-                    Email:*<br /><textarea cols="60" rows="1" placeholder="Enter email addresses" required></textarea><br />
-                    Date:*<br /><input type="date" name="Date" min="2017-11-01" max="2017-12-31" placeholder="mm/dd/yy" required /><br />
-                    Time:*<br /><input type="time" name="Time" min="10:00:00" max="22:00:00" step="15" placeholder="10:00:00" required />
-                </label>
+                <div>
+                    <label>Name:*</label><input type="text" name="name" placeholder="Enter Name" required /><br />
+                </div>
+                <div>  <label>Address:*</label><textarea cols="30" rows="1" placeholder="Enter Address" required></textarea><br /></div>
+                <div>  <label>Postal Code:*</label><input type="text" maxlength="6" numeric="6" placeholder="Enter Postal Code" required /><br /></div>
+                <div> <label>Phone #:*</label><input type="text" pattern="[689][0-9]{7}" placeholder="Enter Phone Number" required /><br /></div>
+                <div> <label>Email:*</label><textarea cols="60" rows="1" placeholder="Enter email addresses" required></textarea><br /></div>
+                <div>  <label>Date:*</label><input id="date" type="date" name="Date" min="" max="" placeholder="mm/dd/yy" required /><br /></div>
+                <div>  <label>Time:*</label><input id="time" type="time" name="Time" min="10:00:00" max="21:00:00" step="15"     required /><br /><br /></div>
+                <button type="submit">Submit</button>
+                <button type="reset" value="Reset">Reset</button>
             </fieldset>
         </p>
     </form>
-    <button onclick="submit()">submit</button>
-    <input type="reset" value="Reset" onclick="reload()" />
     <div id="container">
         <div id="animate"></div>
     </div>
