@@ -8,7 +8,7 @@ body {
     margin-top: 0;
     z-index:-2;
     background-size:cover;
-    
+    min-width:650px;
 }
 
 #main {
@@ -21,7 +21,7 @@ body {
 }
 
 #contactinfo{
-    padding:50px 50px 0px 50px;
+    padding-left: 3vw;
     float: left;
 }
 
@@ -43,9 +43,9 @@ a:hover{
 }
 
 #ophours{
-    
-    padding: 50px 70px 10px 100px;
+    padding-top:2%;
     float:right;
+    
 }
 
 tr td {
@@ -53,38 +53,39 @@ tr td {
 }
 
 td {
-    width: 200px;
+    width: 13vw;
     color: darkgoldenrod;
 }
 
 table {
+    width:40vw; 
     border-collapse: collapse;
     text-align:center;
 }
 
 div#ophours u{
-    padding-left:280px;
+    text-align:center;
 }
 
 .grow {
     height: 2px;
     background-color: white;
     animation: 3s linegrow;
-    width: 200px;
+    width: 13vw;
 }
 
 .grow2 {
     height: 2px;
     background-color: white;
     animation: 3s linegrow2;
-    width: 100px;
+    width: 7vw;
 }
 
 .grow3 {
     height: 2px;
     background-color: white;
     animation: 3s linegrow3;
-    width: 70px;
+    width: 6vw;
 }
 
 #time {
@@ -109,7 +110,7 @@ div#ophours u{
     }
 
     100% {
-        width:200px;
+        width:13vw;
     }
 }
 
@@ -119,7 +120,7 @@ div#ophours u{
     }
 
     100% {
-        width: 91px;
+        width: 7vw;
     }
 }
 
@@ -129,6 +130,6 @@ div#ophours u{
     }
 
     100% {
-        width: 73px;
+        width: 6vw;
     }
 }

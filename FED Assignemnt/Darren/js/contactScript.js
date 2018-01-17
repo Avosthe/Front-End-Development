@@ -55,3 +55,7 @@ function addzero(i) {
     };
     return i;
 }
+
+function lul() {
+    alert(window.innerWidth);
+}
