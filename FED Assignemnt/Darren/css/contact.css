@@ -14,14 +14,14 @@ body {
 #main {
     margin: auto;
     background: #202020;
-    width: 75%;
+    width: 80%;
     color: darkgoldenrod;
-    font: bold 24px Simplifica;
+    font: bold 20px Simplifica;
     overflow: auto;
 }
 
 #contactinfo{
-    padding:50px 50px 30px 100px;
+    padding:50px 50px 0px 50px;
     float: left;
 }
 
@@ -37,18 +37,18 @@ a:hover{
 
 #map {
     width: 100%;
-    height: 20vw;
+    height: 250px;
     background-color: grey;
     
 }
 
 #ophours{
     
-    padding: 50px 70px 20px 100px;
+    padding: 50px 70px 10px 100px;
     float:right;
 }
 
-table tr td {
+tr td {
     padding: 5px;
 }
 
@@ -63,7 +63,7 @@ table {
 }
 
 div#ophours u{
-    padding-left:270px;
+    padding-left:280px;
 }
 
 .grow {
@@ -88,12 +88,19 @@ div#ophours u{
 }
 
 #time {
-    padding-right: 50px;
-    padding-bottom: 50px;
+    padding-right: 30px;
+    padding-bottom: 10px;
     clear: both;
     float: right;
-    font-size: 56px;
+    font-size: 50px;
     color: darkgoldenrod;
+}
+
+#clock{
+    clear:both;
+    float:right;
+    padding-right:30px;
+    font-size:30px;
 }
 
 @keyframes linegrow {
@@ -124,8 +131,4 @@ div#ophours u{
     100% {
         width: 73px;
     }
-}
-
-nav a{
-    background-color:white;
 }
