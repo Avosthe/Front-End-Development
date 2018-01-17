@@ -5,18 +5,15 @@
 
 
 body {
-    background: url("../images/reservation_bg2.jpeg");
-    width: 100vw;
-    height: 100vh;
+    background: url("../images/reservation_bg.jpg");
+    width:100vw;
+    height:100vh;
     margin: 0;
     padding: 0;
-    position: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+    position:fixed;
 }
 
-#test
-{
+#test{   
     width:100vw;
     height:100vh;
     position:absolute;
@@ -24,15 +21,15 @@ body {
     background:black;
     z-index:-1;
 }
-#header
-{
+
+#header {
     background: transparent;
-    text-align:center;
-    color:#b4953f;
-    font:bold 110px Simplifica;
+    text-align: center;
+    color: #a3842e;
+    font: bold 110px Simplifica;
 }
 
-#button1 {
+#button1 {  
     border: 2px solid white;
     text-align: center;
     font: bold 20px arial;
@@ -40,7 +37,7 @@ body {
     position: absolute;
     width: 300px;
     height: 50px;
-    top: 52%;
+    top: 60%;
     left: 50%;
     margin: -100px 0 0 -150px;
     
@@ -54,16 +51,17 @@ body {
     position: absolute;
     width: 300px;
     height: 50px;
-    bottom: 37%;
+    bottom: 33%;
     left: 50%;
     margin: -100px 0 0 -150px;
     
 }
 
-#button1:hover, #button2:hover
-{
-    border: 2px solid #b4953f;
-    color: #b4953f;
+#button1:hover, #button2:hover {
+    border: 2px solid black;
+    background: #a3842e;
+    color: black;
+    transition:linear 0.2s;
 }
 
 div .bg {

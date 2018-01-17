@@ -1,20 +1,30 @@
 ﻿<!DOCTYPE html>
-<link rel="stylesheet" href="css/order.css" />
-<script src="js/order.js"></script>
+<link rel="stylesheet" href="Zachary/css/order.css" />
+<script src="Zachary/js/order.js"></script>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <script src="https://www.w3schools.com/lib/w3.js"></script>
     <meta charset="utf-8" />
     <title>Order Form</title>
 </head>
-<body onload="date(); time();">
-    <form id="form" onsubmit="lul();return false;">
+<body>
+    <div id="start">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="burgers.html">Burgers</a>
+            <a href="sides.html">Sides</a>
+            <a href="drinks.html">Drinks</a>
+            <a href="OrderForm.html">Takeaway</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </div>
+    <form>
         <h1>Order Form</h1>
         <p>
-            <img src="images/deliveryguy.jpg" alt="delivery man" style="width:50px;height:50px;" />
+            <img src="images/deliveryguy.jpg" alt="delivery man" style="width:50px;height:50px;"/>
             <input type="radio" value="delivery" name="order" required />Delivery
             <input type="radio" value="pickup" name="order" />Pick Up
-            <img src="images/takeaway.jpg" alt="takeaway" style="background:white;width:50px;height:50px;" />
+            <img src="images/takeaway.jpg" alt="takeaway" style="background:white;width:50px;height:50px;"/>
         </p>
         <p>
             <fieldset style="width:200px;">
