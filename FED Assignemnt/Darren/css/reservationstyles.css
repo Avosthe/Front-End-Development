@@ -5,21 +5,12 @@
 
 
 body {
-    background: url("../images/reservation_bg.jpg");
-    width:100vw;
-    height:100vh;
-    margin: 0;
-    padding: 0;
-    position:fixed;
-}
-
-#overlay {   
-    width:100vw;
-    height:100vh;
-    position:absolute;
-    opacity:0.2;
-    background:white;
-    z-index:-1;
+    background: url("../images/roses_bg.jpg");
+    /*width:100vw;
+    height:100vh;*/
+    background-attachment:fixed;
+    background-size:cover;
+    background-repeat:no-repeat;
 }
 
 #header {
@@ -28,6 +19,8 @@ body {
     color: darkgoldenrod;
     font: bold 110px Simplifica;
     z-index:0;
+    
+    position:relative;
 }
 
 #button1 {  
@@ -58,15 +51,14 @@ body {
     
 }
 
-    #button1:hover, #button2:hover {
-        border: 2px solid black;
-        background: darkgoldenrod;
-        color: black;
-        transition: linear 0.2s;
-        animation: 5s moveLeft;
-    }
+#button1:hover, #button2:hover {
+    border: 2px solid black;
+    background: darkgoldenrod;
+    color: black;
+    transition:linear 0.2s;
+}
 
-div .bg {
+div .overlay {
     position:absolute;
     width: 100%;
     height: 100%;
@@ -82,6 +74,6 @@ div .bg {
     }
 
     100%{
-        left:-10%
+        left:0%
     }
 }

@@ -6,8 +6,9 @@ nav {
     text-align: center;
     background-color: white;
     border-top: 2px solid transparent;
-    width:100%;
-    margin:0;
+    /*width:100%;*/
+    margin:auto;
+    border-bottom:1px solid darkgoldenrod;
 }
 
 nav a {
