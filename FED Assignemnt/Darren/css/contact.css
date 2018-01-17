@@ -8,20 +8,20 @@ body {
     margin-top: 0;
     z-index:-2;
     background-size:cover;
-    
+    min-width:650px;
 }
 
 #main {
     margin: auto;
     background: #202020;
-    width: 75%;
+    width: 80%;
     color: darkgoldenrod;
-    font: bold 24px Simplifica;
+    font: bold 20px Simplifica;
     overflow: auto;
 }
 
 #contactinfo{
-    padding:50px 50px 30px 100px;
+    padding-left: 3vw;
     float: left;
 }
 
@@ -37,63 +37,71 @@ a:hover{
 
 #map {
     width: 100%;
-    height: 20vw;
+    height: 40vh;
     background-color: grey;
     
 }
 
 #ophours{
-    
-    padding: 50px 70px 20px 100px;
+    padding-top:2%;
     float:right;
+    
 }
 
-table tr td {
+tr td {
     padding: 5px;
 }
 
 td {
-    width: 200px;
+    width: 13vw;
     color: darkgoldenrod;
 }
 
 table {
+    width:40vw; 
     border-collapse: collapse;
     text-align:center;
 }
 
 div#ophours u{
-    padding-left:270px;
+    text-align:center;
 }
 
 .grow {
     height: 2px;
     background-color: white;
     animation: 3s linegrow;
-    width: 200px;
+    width: 13vw;
 }
 
 .grow2 {
     height: 2px;
     background-color: white;
     animation: 3s linegrow2;
-    width: 100px;
+    width: 7vw;
 }
 
 .grow3 {
     height: 2px;
     background-color: white;
     animation: 3s linegrow3;
-    width: 70px;
+    width: 6vw;
 }
 
 #time {
-    padding-right: 50px;
-    padding-bottom: 50px;
+    padding-right: 30px;
+    padding-bottom: 10px;
     clear: both;
     float: right;
-    font-size: 56px;
+    font-size: 50px;
     color: darkgoldenrod;
+}
+
+#clock{
+    clear:both;
+    float:right;
+    padding-right:30px;
+    font-size:30px;
 }
 
 @keyframes linegrow {
@@ -102,7 +110,7 @@ div#ophours u{
     }
 
     100% {
-        width:200px;
+        width:13vw;
     }
 }
 
@@ -112,7 +120,7 @@ div#ophours u{
     }
 
     100% {
-        width: 91px;
+        width: 7vw;
     }
 }
 
@@ -122,10 +130,6 @@ div#ophours u{
     }
 
     100% {
-        width: 73px;
+        width: 6vw;
     }
-}
-
-nav a{
-    background-color:white;
 }

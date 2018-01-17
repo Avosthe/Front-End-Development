@@ -12,8 +12,12 @@ function initMap() {
     });
 }
 
-function test() {
+function status()
+{
     var now = new Date();
+    var hh = addzero(now.getHours());
+    var mm = addzero(now.getMinutes());
+    var ss = addzero(now.getSeconds());
     var opening;
     var closing;
 
@@ -21,7 +25,6 @@ function test() {
         opening = 10;
         closing = 21;
     }
-
 
     else if (now.getDay() == 5) {
         opening = 11;
@@ -39,4 +42,15 @@ function test() {
     else {
         document.getElementById("time").innerHTML = "Sorry, we are <u>closed</u>, please come back tomorrow!";
     }
+
+    document.getElementById("clock").innerHTML = 'The Time is Now: ' + hh + ':' + mm + ':' + ss;
+    var t = setTimeout(status, 100);
+
+}
+
+function addzero(i) {
+    if (i < 10) {
+        return (i = "0" + i);
+    };
+    return i;
 }
