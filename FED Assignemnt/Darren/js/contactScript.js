@@ -36,7 +36,7 @@ function status()
         closing = 15;
     }
 
-    if (now.getHours() >= opening && now.getHours() <= closing) {
+    if (now.getHours() >= opening && now.getHours() < closing) {
         document.getElementById("time").innerHTML = "We are currently <u>open!</u>";
     }
     else {
@@ -54,3 +54,4 @@ function addzero(i) {
     };
     return i;
 }
+

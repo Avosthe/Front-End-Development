@@ -1,29 +1,36 @@
-﻿body {
-    /*background: url("../images/index_bg2.jpg");*/
+﻿@font-face {
+    font-family: 'SIMPLIFICA';
+    src: url('SIMPLIFICA Typeface.ttf') format('truetype');
+
+}body {
+    background: white;
     background-attachment: fixed;
     text-align: center;
-    margin: 0;
-    background-repeat: no-repeat;
     background-size: cover;
 }
 
 #start {
-    background: url("../images/index_bg.png");
+    background: url("../images/test_bg.jpg");
     background-attachment: fixed;
     text-align: center;
-    margin: auto;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
     height: 100vh;
 }
 
-#filler {
-    width: 80%;
-    height: 2000px;
-}
 
 #resize {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
+}
+
+#imageText{
+    position:absolute;
+    padding:20px;
+    width:10%;
+    top:40%;
+    left:60%;
+    /*border:1px solid black;*/
+    font:bold 124px Simplifica;
 }
