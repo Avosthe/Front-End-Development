@@ -49,13 +49,8 @@ function status()
 }
 
 function addzero(i) {
-    if (i < 10)
-    {
+    if (i < 10) {
         return (i = "0" + i);
     };
     return i;
-}
-
-function lul() {
-    alert(window.innerWidth);
 }
