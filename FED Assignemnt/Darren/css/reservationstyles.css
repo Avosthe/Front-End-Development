@@ -6,11 +6,10 @@
 
 body {
     background: url("../images/roses_bg.jpg");
-    /*width:100vw;
-    height:100vh;*/
     background-attachment:fixed;
     background-size:cover;
     background-repeat:no-repeat;
+    
 }
 
 #header {
@@ -19,7 +18,6 @@ body {
     color: darkgoldenrod;
     font: bold 110px Simplifica;
     z-index:0;
-    
     position:relative;
 }
 
@@ -51,9 +49,34 @@ body {
     
 }
 
+#transformbutton1 {
+    border: 2px solid black;
+    text-align: center;
+    font: bold 20px arial;
+    color: black;
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    top: 60%;
+    left: 0%;
+    margin: -100px 0 0 -150px;
+}
+
+#transformbutton2 {
+    border: 2px solid black;
+    text-align: center;
+    font: bold 20px arial;
+    color: black;
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    bottom: 33%;
+    left: 0%;
+    margin: -100px 0 0 -150px;
+}
 #button1:hover, #button2:hover {
     border: 2px solid black;
-    background: darkgoldenrod;
+    background: palegoldenrod;
     color: black;
     transition:linear 0.2s;
 }
@@ -62,18 +85,14 @@ div .overlay {
     position:absolute;
     width: 100%;
     height: 100%;
-    background: white;
+    background: palegoldenrod;
     opacity: 0.5;
     z-index: -1;
     
 }
 
 @keyframes moveLeft{
-    0%{
-
-    }
-
     100%{
-        left:0%
+        left:0;
     }
 }

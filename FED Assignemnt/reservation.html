@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="/Darren/css/reservationstyles.css" />
     <script src="https://www.w3schools.com/lib/w3.js"></script>
     <script src="/Darren/js/reservationScript.js" ></script>
+    <script src="headerScript.js"></script>
+
 </head>
-<body>
+
+<body onload="currentPage()">
     <div w3-include-html="header.html"></div>
 
     <script>
@@ -25,7 +28,7 @@
             <p>Call Us</p>
         </div>
     </a>
-    <a href="reserveform.html">
+    <a onclick="move()">
     <div id="button2">
         <div class="overlay"></div>
         <p>Reserve Online</p>

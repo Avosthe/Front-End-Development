@@ -20,7 +20,7 @@ nav a {
     text-decoration: none;
     border-top: 3px solid transparent;
     background-color: transparent;
-    opacity: 0.5;
+    opacity: 0.6;
     margin: 0 10px;
     
 }
@@ -31,4 +31,5 @@ nav a:hover {
     border-top: 3px solid #b4953f;
     border-width: 3px;
     transition: border-top linear 0.3s;
+
 }
