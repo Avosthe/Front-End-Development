@@ -4,18 +4,20 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
-    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" type="text/css" href="header.css" />
+    <script src="headerScript.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="coffee-icon.png" />
 </head>
-<body>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="OrderForm.html">Delivery</a>
-            <a href="reservation.html">Reservation</a>
-            <a href="joinus.html">Join Us</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html">Contact Us</a>
-        </nav>
-    <script src="headerScript.js"></script>
+<body onload="">
+    <nav>
+        <img src="coffee-icon.png" alt="company-logo" onclick="window.location.href = 'index.html';" />
+        <a href="menu.html" name="menu" ><span>Menu</span></a>
+        <a href="delivery.html" name="delivery" ><span>Delivery</span></a>
+        <a href="reservation.html" name="reservation" ><span>Reservation</span></a>
+        <a href="join-us.html" name="joinus" ><span>Join Us</span></a>
+        <a href="locate.html" name="locate" ><span>Locate Us</span></a>
+        <a href="about.html" name="about" ><span>About Us</span></a>
+        <a href="contact.html" name="contact" ><span>Contact Us</span></a>
+    </nav>
 </body>
 </html>
