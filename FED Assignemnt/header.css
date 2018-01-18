@@ -1,28 +1,35 @@
-﻿nav {
+﻿body{
+    margin:0;
+}
+
+nav {
     text-align: center;
-    background-color: black;
-    border: 2px solid transparent;
-    margin: 0 auto;
+    background-color: white;
+    border-top: 2px solid transparent;
+    /*width:100%;*/
+    margin:auto;
+    border-bottom:1px solid darkgoldenrod;
 }
 
 nav a {
     display: inline-table;
     padding: 18px 30px;
     font: bold 12px Arial;
-    color: white;
+    color: black;
     text-transform: uppercase;
     text-decoration: none;
     border-top: 3px solid transparent;
     background-color: transparent;
-    opacity: 0.5;
+    opacity: 0.6;
     margin: 0 10px;
     
 }
 
 nav a:hover {
     opacity: 1;
-    color: #fff;
+    color: #000;
     border-top: 3px solid #b4953f;
     border-width: 3px;
     transition: border-top linear 0.3s;
+
 }

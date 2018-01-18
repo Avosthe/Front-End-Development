@@ -4,7 +4,7 @@
 }
 
 body {
-    background: url("../images/index_bg2.jpg");
+    background: url("../images/index_bg.jpeg");
     margin-top: 0;
     z-index:-2;
     background-size:cover;
@@ -13,7 +13,7 @@ body {
 
 #main {
     margin: auto;
-    background: #202020;
+    background: white ;
     width: 80%;
     color: darkgoldenrod;
     font: bold 20px Simplifica;
@@ -28,7 +28,7 @@ body {
 a{
     font-style:normal;
     text-decoration:none;
-    color: white;
+    color: black;
 }
 
 a:hover{
@@ -69,21 +69,21 @@ div#ophours u{
 
 .grow {
     height: 2px;
-    background-color: white;
+    background-color: black;
     animation: 3s linegrow;
     width: 13vw;
 }
 
 .grow2 {
     height: 2px;
-    background-color: white;
+    background-color: black;
     animation: 3s linegrow2;
     width: 7vw;
 }
 
 .grow3 {
     height: 2px;
-    background-color: white;
+    background-color: black;
     animation: 3s linegrow3;
     width: 6vw;
 }

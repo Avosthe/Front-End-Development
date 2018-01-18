@@ -1,29 +1,82 @@
-﻿body {
-    /*background: url("../images/index_bg2.jpg");*/
+﻿@font-face {
+    font-family: 'SIMPLIFICA';
+    src: url('SIMPLIFICA Typeface.ttf') format('truetype');
+
+}body {
+    background: white;
     background-attachment: fixed;
     text-align: center;
-    margin: 0;
-    background-repeat: no-repeat;
     background-size: cover;
 }
 
 #start {
-    background: url("../images/index_bg.png");
+
+    background: url("../images/test2_bg.jpg");
     background-attachment: fixed;
     text-align: center;
-    margin: auto;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
-    height: 100vh;
+    height: 80vh;
 }
 
-#filler {
-    width: 80%;
-    height: 2000px;
+#filler{
+    display:inline-block;
+    top:10%;
+    height:300vh;
+    font:36px Simplifica;
 }
 
 #resize {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
+}
+
+#imageText{
+    position:absolute;
+    padding:20px;
+    width:10%;
+    top:40%;
+    left:60%;
+    /*border:1px solid black;*/
+    font:bold 124px Simplifica;
+    color:white;
+}
+
+#menu {
+    position: absolute;
+    padding: 20px;
+    top: 60%;
+    left: 60%;
+    font: bold 36px Simplifica;
+    color: black;
+    border: 1px solid black;
+    background:white;
+    opacity:0.8;
+}
+
+#learnmore {
+    position: absolute;
+    padding: 20px;
+    top: 60%;
+    left: 75%;
+    font: bold 36px Simplifica;
+    color: black;
+    border: 1px solid black;
+    background: white;
+    opacity: 0.8;
+}
+
+#menu:hover, #learnmore:hover{
+    border:1px solid darkgoldenrod;
+    color:darkgoldenrod;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    opacity: 0.5;
+    z-index: -1;
 }

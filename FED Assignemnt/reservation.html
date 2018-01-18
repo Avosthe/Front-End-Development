@@ -3,31 +3,34 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Make a Reservations</title>
+    <title>Make a Reservation</title>
     <link rel="stylesheet" href="/Darren/css/reservationstyles.css" />
     <script src="https://www.w3schools.com/lib/w3.js"></script>
     <script src="/Darren/js/reservationScript.js" ></script>
+    <script src="headerScript.js"></script>
+
 </head>
-<body>
+
+<body onload="currentPage()">
     <div w3-include-html="header.html"></div>
 
     <script>
         w3.includeHTML();
     </script>
 
-    <div id="test"></div>
+    <div id="overlay"></div>
     <p id="header">
         Make a Reservation With Us!
     </p>
-    <a href="contact.html" id="callReserve">
+    <a href="contact.html">
         <div id="button1">
-            <div class="bg"></div>
+            <div class="overlay"></div>
             <p>Call Us</p>
         </div>
     </a>
-    <a href="reserveform.html" id="formReserve">
+    <a onclick="move()">
     <div id="button2">
-        <div class="bg"></div>
+        <div class="overlay"></div>
         <p>Reserve Online</p>
     </div>
     </a>

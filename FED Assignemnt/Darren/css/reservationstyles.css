@@ -5,35 +5,27 @@
 
 
 body {
-    background: url("../images/reservation_bg.jpg");
-    width:100vw;
-    height:100vh;
-    margin: 0;
-    padding: 0;
-    position:fixed;
-}
-
-#test {   
-    width:100vw;
-    height:100vh;
-    position:absolute;
-    opacity:0.7;
-    background:black;
-    z-index:-1;
+    background: url("../images/roses_bg.jpg");
+    background-attachment:fixed;
+    background-size:cover;
+    background-repeat:no-repeat;
+    
 }
 
 #header {
     background: transparent;
     text-align: center;
-    color: #a3842e;
+    color: darkgoldenrod;
     font: bold 110px Simplifica;
+    z-index:0;
+    position:relative;
 }
 
 #button1 {  
-    border: 2px solid white;
+    border: 2px solid black;
     text-align: center;
     font: bold 20px arial;
-    color: white;
+    color: black;
     position: absolute;
     width: 300px;
     height: 50px;
@@ -44,10 +36,10 @@ body {
 }
 
 #button2 {
-    border: 2px solid white;
+    border: 2px solid black;
     text-align: center;
     font: bold 20px arial;
-    color: white;
+    color: black;
     position: absolute;
     width: 300px;
     height: 50px;
@@ -57,20 +49,50 @@ body {
     
 }
 
+#transformbutton1 {
+    border: 2px solid black;
+    text-align: center;
+    font: bold 20px arial;
+    color: black;
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    top: 60%;
+    left: 0%;
+    margin: -100px 0 0 -150px;
+}
+
+#transformbutton2 {
+    border: 2px solid black;
+    text-align: center;
+    font: bold 20px arial;
+    color: black;
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    bottom: 33%;
+    left: 0%;
+    margin: -100px 0 0 -150px;
+}
 #button1:hover, #button2:hover {
     border: 2px solid black;
-    background: #a3842e;
+    background: palegoldenrod;
     color: black;
     transition:linear 0.2s;
 }
 
-div .bg {
+div .overlay {
     position:absolute;
     width: 100%;
     height: 100%;
-    background: black;
+    background: palegoldenrod;
     opacity: 0.5;
     z-index: -1;
     
 }
 
+@keyframes moveLeft{
+    100%{
+        left:0;
+    }
+}
