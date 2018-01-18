@@ -15,7 +15,7 @@ body {
     margin: auto;
     background: white ;
     width: 80%;
-    color: darkgoldenrod;
+    color: black;
     font: bold 20px Simplifica;
     overflow: auto;
 }
@@ -28,11 +28,11 @@ body {
 a{
     font-style:normal;
     text-decoration:none;
-    color: black;
+    color: #4d4d4d;
 }
 
 a:hover{
-    color:darkgoldenrod;
+    color:darkgrey;
 }
 
 #map {
@@ -54,7 +54,7 @@ tr td {
 
 td {
     width: 13vw;
-    color: darkgoldenrod;
+    color: black;
 }
 
 table {
@@ -69,21 +69,21 @@ div#ophours u{
 
 .grow {
     height: 2px;
-    background-color: black;
+    background-color: darkgoldenrod;
     animation: 3s linegrow;
     width: 13vw;
 }
 
 .grow2 {
     height: 2px;
-    background-color: black;
+    background-color: darkgoldenrod;
     animation: 3s linegrow2;
     width: 7vw;
 }
 
 .grow3 {
     height: 2px;
-    background-color: black;
+    background-color: darkgoldenrod;
     animation: 3s linegrow3;
     width: 6vw;
 }
