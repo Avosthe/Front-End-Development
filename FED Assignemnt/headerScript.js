@@ -12,7 +12,7 @@ function currentPage() {
             test[i].style.borderTop = "3px solid darkgoldenrod";
             test[i].style.color = "black";
             test[i].style.opacity = "1";
-            break
+            break;
         }
     }
 }
