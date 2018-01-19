@@ -10,7 +10,7 @@ function currentPage() {
     for (var i = 0; i < nameList.length; i++) {
         if (location.pathname.toString().includes(nameList[i])) {
             test[i].style.borderTop = "3px solid darkgoldenrod";
-            test[i].style.color = "black";
+            test[i].style.color = "white";
             test[i].style.opacity = "1";
             break;
         }
