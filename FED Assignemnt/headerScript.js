@@ -16,3 +16,19 @@ function currentPage() {
         }
     }
 }
+
+function changebackbuttongold() {
+    document.getElementById("backbutton").innerHTML = "<img src=\"Darren/images/backgold.png\">";
+}
+
+function changebackbuttonwhite() {
+    document.getElementById("backbutton").innerHTML = "<img src=\"Darren/images/back.png\">";
+}
+
+function closesidenav() {
+    document.getElementById("sideNav").style.width = "0";
+}
+
+function opensidenav() {
+    document.getElementById("sideNav").style.width = "250px";
+}

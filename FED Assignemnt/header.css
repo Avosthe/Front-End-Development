@@ -1,4 +1,9 @@
-﻿body {
+﻿@font-face {
+    font-family: 'Simplifica';
+    src: url("Darren/css/SIMPLIFICA Typeface.ttf") format('truetype');
+}
+
+body {
     margin: 0;
 }
 
@@ -15,7 +20,7 @@ nav {
 nav a {
     display: inline-table;
     padding: 18px 30px;
-    font: bold 1vw Arial;
+    font: bold 14px Arial;
     /*color: black;*/
     color: silver;
     /*background-color: rgba(255, 255, 255, 0.8);*/
@@ -55,6 +60,40 @@ nav img:hover{
     transform: scale(0.9);
 }
 
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.95);
+    overflow-x: hidden;
+    z-index: 100;
+    text-align:left;
+    transition:0.5s;
+}
+
+.sidenav a {
+    display: block;
+    padding: 20px;
+    font: 36px Simplifica;
+    width:100%;
+    text-decoration:none;
+    color:#4d4d4d;
+}
+
+.sidenav a:hover{
+    display: block;
+    background-color:black;
+    color:darkgoldenrod;
+    padding: 20px;
+    font: 36px Simplifica;
+}
+
+#menubutton{
+    width:28px;
+    height:28px;
+    visibility:hidden;
+}
+
 @keyframes easeIn {
     0% {
         transform: translateY(-100px);
@@ -69,18 +108,30 @@ nav img:hover{
     animation: easeIn 0.5s;
 }
 
-@media only screen and (max-width: 1080px){
+@media only screen and (max-width: 1145px){
     nav{
         width:100vw;
+
     }
 
     nav a{
         font-size:10px;
-        width:1vw;
+        width:0;
         padding:0;
         opacity:1;
+        visibility:hidden;
     }
+
     .buttons:hover, .buttons{
         opacity:0;
     }
+
+    nav img{
+        position:center;
+    }
+
+    #menubutton{
+        visibility:visible;
+    }
 }
+

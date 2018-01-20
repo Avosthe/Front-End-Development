@@ -11,8 +11,9 @@
 <body onload="">
 
     <div id="sideNav" class="sidenav">
+        <a href="#" id="backbutton" onclick="closesidenav()" onmouseover="changebackbuttongold()" onmouseout="changebackbuttonwhite()"><img src="Darren/images/back.png" /></a>
         <a href="menu.html" name="menu">Menu</a>
-        <a href="OrderForm.html" name="order">Delivery</a>
+        <a href="order.html" name="orderform">Delivery</a>
         <a href="reservation.html" name="reservation">Reservation</a>
         <a href="join-us.html" name="joinus">Join Us</a>
         <a href="about.html" name="about">About Us</a>
@@ -20,9 +21,10 @@
     </div>
 
     <nav>
+        <img id="menubutton" onclick="opensidenav()" src="Darren/images/menu.png" />
         <img src="coffee-icon.png" alt="company-logo" onclick="window.location.href = 'index.html';" />
         <a class="buttons" href="menu.html" name="menu" >Menu</a>
-        <a class="buttons" href="OrderForm.html" name="order" >Delivery</a>
+        <a class="buttons" href="order.html" name="order" >Delivery</a>
         <a class="buttons" href="reservation.html" name="reservation" >Reservation</a>
         <a class="buttons" href="join-us.html" name="joinus" >Join Us</a>
         <a class="buttons" href="about.html" name="about" >About Us</a>
