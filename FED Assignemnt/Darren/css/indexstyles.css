@@ -46,21 +46,25 @@
 #menu {
     position: absolute;
     padding: 20px;
-    top: 60%;
-    left: 60%;
-    font: bold 36px Simplifica;
+    top: 60vh;
+    left: 55vw;
+    width: 13vw;
+    height: 4vh;
+    font: bold 30px Simplifica;
     color: black;
     border: 1px solid black;
-    background:white;
-    opacity:0.8;
+    background: white;
+    opacity: 0.8;
 }
 
 #learnmore {
     position: absolute;
     padding: 20px;
-    top: 60%;
-    left: 75%;
-    font: bold 36px Simplifica;
+    width:8vw;
+    height:4vh;
+    top: 60vh;
+    left: 75vw;
+    font: bold 30px Simplifica;
     color: black;
     border: 1px solid black;
     background: white;
@@ -80,3 +84,24 @@
     opacity: 0.5;
     z-index: -1;
 }
+
+@media only screen and (max-width: 1500px){
+    #menu, #learnmore{
+        height:2vh;
+        font-size: 24px;
+    }
+    #imageText{
+        font-size:94px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #menu, #learnmore {
+        height:1vh;
+        font-size: 16px;
+    }
+    #imageText {
+        font-size: 80px;
+    }
+}
+

@@ -7,7 +7,6 @@ nav {
     /*background-color: rgba(255, 255, 255, 0.8);*/
     background-color: rgba(0, 0, 0, 0.8);
     margin: 0 auto;
-    min-width: 1270px;
     overflow: auto;
     width: 100%;
     box-shadow: 0 1.5px 5px 3px rgba(0, 0, 0, 0.3);
@@ -16,16 +15,20 @@ nav {
 nav a {
     display: inline-table;
     padding: 18px 30px;
-    font: bold 14px Arial;
+    font: bold 1vw Arial;
     /*color: black;*/
     color: silver;
     /*background-color: rgba(255, 255, 255, 0.8);*/
     text-transform: uppercase;
     text-decoration: none;
     border-top: 3px solid transparent;
-    opacity: 1;
+    opacity: 0;
     margin: 0 10px;
 
+}
+
+.buttons {
+    opacity:1;
 }
 
 nav a:hover{
@@ -64,4 +67,20 @@ nav img:hover{
 
 .transform{
     animation: easeIn 0.5s;
+}
+
+@media only screen and (max-width: 1080px){
+    nav{
+        width:100vw;
+    }
+
+    nav a{
+        font-size:10px;
+        width:1vw;
+        padding:0;
+        opacity:1;
+    }
+    .buttons:hover, .buttons{
+        opacity:0;
+    }
 }
