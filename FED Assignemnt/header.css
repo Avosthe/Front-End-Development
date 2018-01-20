@@ -94,6 +94,7 @@ nav img:hover{
     visibility:hidden;
 }
 
+
 @keyframes easeIn {
     0% {
         transform: translateY(-100px);
@@ -111,7 +112,7 @@ nav img:hover{
 @media only screen and (max-width: 1145px){
     nav{
         width:100vw;
-
+        height:60px;
     }
 
     nav a{

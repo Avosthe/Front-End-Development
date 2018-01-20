@@ -17,6 +17,14 @@ function currentPage() {
     }
 }
 
+function menuhover() {
+    document.getElementById("menubutton").innerHTML = "<img src=\"Darren/images/menugold.png\">";
+}
+
+function menuhoverout() {
+    document.getElementById("menubutton").innerHTML = "<img src=\"Darren/images/menu.png\">";
+}
+
 function changebackbuttongold() {
     document.getElementById("backbutton").innerHTML = "<img src=\"Darren/images/backgold.png\">";
 }
@@ -32,3 +40,4 @@ function closesidenav() {
 function opensidenav() {
     document.getElementById("sideNav").style.width = "250px";
 }
+
