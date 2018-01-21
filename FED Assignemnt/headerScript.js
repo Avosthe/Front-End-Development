@@ -1,5 +1,4 @@
 // JavaScript source code
-
 function currentPage() {
     var nameList = new Array();
     var test = document.querySelectorAll("nav a");
@@ -17,12 +16,8 @@ function currentPage() {
     }
 }
 
-function menuhover() {
-    document.getElementById("menubutton").innerHTML = "<img src=\"Darren/images/menugold.png\">";
-}
-
-function menuhoverout() {
-    document.getElementById("menubutton").innerHTML = "<img src=\"Darren/images/menu.png\">";
+function opensidenav() {
+    document.getElementById("sideNav").style.width = "250px";
 }
 
 function changebackbuttongold() {
@@ -37,7 +32,5 @@ function closesidenav() {
     document.getElementById("sideNav").style.width = "0";
 }
 
-function opensidenav() {
-    document.getElementById("sideNav").style.width = "250px";
-}
+
 
