@@ -4,12 +4,68 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
+    <link rel="stylesheet" href="ZhiPeng/css/reserve.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="ZhiPeng/js/reserveform.js"></script>
 </head>
-<body>
-    <form>
-        <fieldset>
-            hi
-        </fieldset>
-    </form>
+<body onload="currentPage()">
+    <div w3-include-html="header.html"></div>
+
+    <script>
+        w3.includeHTML();
+    </script>
+    <section>
+
+        <img src="ZhiPeng/images/6.jpg" />
+
+        <form class="container">
+
+            <main>
+                <p>Please fill in this form to complete your reservation.</p>
+                <hr />
+                <div class="b">
+                    <label><b>Name</b></label>
+                    <br /><input type="text" placeholder="First" name="first" required />
+                    <input type="text" placeholder="Last" name="last" required />
+                </div>
+                <div class="b">
+                    <br /><label><b>Email</b></label>
+                    <br /><input type="email" name="email" required />
+                </div>
+                <div class="b">
+                    <br /><label><b>No. Of Seats</b></label>
+                    <br /><input type="number" id="seats" min="1" max="6" value="1" />
+                </div>
+                <div class="b">
+                    <br /><label><b>Time Slots</b></label>
+                    <br /><input list="slots" name="slots" required />
+                    <datalist id="slots"></datalist>
+                </div>
+
+                <div class="b">
+                    <br /><label><b>Phone number</b></label>
+                    <br /><input type="tel" pattern="[689]{1}[0-9]{7}" name="telephone" required />
+                </div>
+
+
+                <a href="signup.html" id="sgnup">
+                    <div>
+                        <div class="sgnup"></div>
+                        <p>Not a member? Sign up here</p>
+                    </div>
+                </a>
+                <div id="deposit" class="c">Note that deposit is not refundable if you exceed the reservation time by 30minutes</div>
+
+                <div>
+                    <br /><button type="reset" class="cancel">Reset</button>
+                    <button type="submit" id="sub" class="sub">Submit</button>
+                </div>
+                
+            </main>
+        </form>
+    </section>
+
+
 </body>
 </html>

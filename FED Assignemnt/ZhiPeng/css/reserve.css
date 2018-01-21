@@ -1,0 +1,58 @@
+﻿
+body {
+    box-sizing: border-box;
+    background: url("../images/4.jpg");
+    color: black;
+    font: bold 24px Simplifica
+}
+
+.b{
+    display: block;
+}
+.container{
+    padding-left: 30px;
+}
+input{
+    width: 200px;
+}
+.c{
+    font-family: Simplifica;
+    font-size: 12px;
+}
+.sgnupbtn {
+    background-color: peru;
+    border: none;
+    color: rgba(0,0,255,0.6);
+}
+    .sgnupbtn:hover {
+        background-color: peru;
+        color: rgba(0,0,255,1);
+        border: none;
+    }
+section {
+    margin: auto;
+    background: #202020;
+    width: 85%;
+    color: black;
+    font: bold 24px Simplifica;
+    overflow: auto;
+}
+
+form {
+    background-color: peru;
+    float: right;
+    display: block;
+    width: 600px;
+    height: 630px;
+    margin-right: 7.5%;
+    opacity: 1;
+}
+
+img{
+    float:left;
+    margin-left: 7.5%;
+    height: 630px;
+}
+.background{
+    background-color: antiquewhite;
+}

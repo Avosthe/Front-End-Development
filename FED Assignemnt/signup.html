@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="ZhiPeng/css/signup.css" />
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="ZhiPeng/js/signup.js"></script>
+</head>
+<body>
+    <div w3-include-html="header.html"></div>
+
+    <script>
+        w3.includeHTML();
+    </script>
+    <div>
+        <img src="ZhiPeng/images/1.jpg" />
+        <img src="ZhiPeng/images/3.jpg" />
+    </div>
+
+    <form>
+
+        <div class="container">
+            <h1>Sign up</h1>
+            <p>Please fill in this form to create an account</p>
+            <hr />
+            <div class="b">
+                <label><strong>Name</strong></label>
+                <br /><input type="text" placeholder="First" name="first" required />
+                <input type="text" placeholder="Last" name="last" required />
+            </div>
+            <div class="b">
+                <br /><label><strong>Email</strong></label>
+                <br /><input type="email" name="email" required />
+            </div>
+            <div class="b">
+                <br /><label><b>Create a password</b></label>
+                <br /><input type="password" name="psw" required />
+            </div>
+            <div class="b">
+                <br /><label><b>Confirm your password</b></label>
+                <br /><input type="password" name="psw-c" required />
+            </div>
+            <div class="b">
+                <br /><label><b>Date of Birth</b></label>
+                <br /><input type="date" id="date" required />
+            </div>
+            <div class="b">
+                <br /><label><b>Gender</b></label>
+                <br /><input list="genders" name="gender" />
+                <datalist id="genders">
+                    <option value="Male"></option>
+                    <option value="Female"></option>
+                    <option value="Others"></option>
+                </datalist>
+            </div>
+            <div class="b">
+                <br /><label><b>Phone number</b></label>
+                <br /><input type="tel" pattern="[689]{1}[0-9]{7}" name="telephone" required />
+            </div>
+            <div class="b">
+                <br /><button type="reset" class="cancel">Cancel</button>
+                <button onclick="onclic()" type="submit" id="sub" class="signup">Sign Up</button>
+            </div>
+        </div>
+
+    </form>
+    <script src="headerScript.js"></script>
+</body>
+</html>

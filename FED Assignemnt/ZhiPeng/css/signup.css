@@ -1,0 +1,74 @@
+﻿body {
+    font-family: Arial;
+    box-sizing: border-box;
+    background: url("../images/2.jpg");
+}
+
+button {
+    padding: 14px 20px;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    opacity: 0.8;
+}
+button:hover{
+    opacity: 1;
+}
+
+
+.b {
+    display: block;
+}
+
+.container {
+    padding-left: 30px;
+    padding-top: 0px;
+}
+
+input {
+    display: inline-block;
+    width: 150px;
+}
+
+form {
+    background-color: antiquewhite;
+    margin-right: 7.5%;
+    display: block;
+    float: right;
+    width: 600px;
+    height: 600px;
+    margin-top: -570px;
+}
+
+
+
+img {
+    width: 32%;
+    margin-left: 7.5%;
+    display: block;
+    margin-top: 1cm;
+}
+
+label {
+    margin-bottom: 2cm;
+}
+
+
+.signup {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    cursor:pointer;
+    width: 200px;
+   
+}
+.cancel {
+    padding: 14px 20px;
+    background-color: #f44336;
+    color: white;
+    cursor:pointer;
+    width:200px;
+
+}
+ 
