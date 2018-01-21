@@ -104,6 +104,12 @@ div#ophours u{
     font-size:30px;
 }
 
+#feedbackbutton{
+    clear:both;
+    float:left;
+    bottom:20px;
+    left:20px;
+}
 @keyframes linegrow {
     0% {
         width:0px;
