@@ -24,7 +24,7 @@ body {
 #button1 {  
     border: 2px solid black;
     text-align: center;
-    font: bold 20px arial;
+    font: bold 22px Simplifica;
     color: black;
     position: absolute;
     width: 300px;
@@ -38,7 +38,7 @@ body {
 #button2 {
     border: 2px solid black;
     text-align: center;
-    font: bold 20px arial;
+    font: bold 22px Simplifica;
     color: black;
     position: absolute;
     width: 300px;

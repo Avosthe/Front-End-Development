@@ -1,8 +1,11 @@
-﻿body {
+﻿@font-face {
+    font-family: 'Simplifica';
+    src: url("SIMPLIFICA Typeface.ttf") format('truetype');
+}
+
+body {
     background-image: url(http://www.allwhitebackground.com/images/2/2276.jpg);
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-size:cover;
-    background-attachment:fixed;
+    font: 22px Simplifica;
 }
 
 form{
@@ -16,6 +19,14 @@ form{
     height: 150px;
 }
 
+#container {
+    width: 435px;
+    height: 65px;
+    position: relative;
+    display:inline;
+    font-size:12px;
+}
+
 fieldset label {
     display: inline-block;
     width: 100px;
@@ -25,37 +36,7 @@ fieldset div{
     margin-top:10px;
 }
 
-nav {
-    text-align: center;
-    background-color: white;
-    border-top: 2px solid transparent;
-    /*width:100%;*/
-    margin: auto;
-    border-bottom: 1px solid darkgoldenrod;
-}
-
-nav a {
-    display: inline-table;
-    padding: 18px 30px;
-    font: bold 12px Arial;
-    color: black;
-    text-transform: uppercase;
-    text-decoration: none;
-    border-top: 3px solid transparent;
-    background-color: transparent;
-    opacity: 0.6;
-    margin: 0 10px;
-}
-
 h1{
     font-size:40px;   
 }
-
-#myTable{
-    border:1px solid black;
-}
-
-#quantity{
-    width:50px;
-}
-
+    
