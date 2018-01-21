@@ -35,10 +35,8 @@
 #imageText{
     position:absolute;
     padding:20px;
-    width:10%;
     top:40%;
     left:60%;
-    /*border:1px solid black;*/
     font:bold 124px Simplifica;
     color:white;
 }
