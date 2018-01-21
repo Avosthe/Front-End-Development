@@ -121,7 +121,7 @@ nav img:hover{
 @media only screen and (max-width: 1145px){
     nav{
         width:100vw;
-        height: 70px;
+        height:60px;
     }
 
     nav a{
