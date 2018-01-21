@@ -3,6 +3,11 @@
     src: url("Darren/css/SIMPLIFICA Typeface.ttf") format('truetype');
 }
 
+@font-face {
+    font-family: YanoneKaffeesatz-Bold;
+    src: url(JingJie/fonts/YanoneKaffeesatz-Bold.ttf);
+}
+
 body {
     margin: 0;
 }
@@ -10,7 +15,7 @@ body {
 nav {
     text-align: center;
     /*background-color: rgba(255, 255, 255, 0.8);*/
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 1);
     margin: 0 auto;
     overflow: auto;
     width: 100%;
@@ -24,6 +29,8 @@ nav a {
     /*color: black;*/
     color: silver;
     /*background-color: rgba(255, 255, 255, 0.8);*/
+    font-family: YanoneKaffeesatz-Bold;
+    font-size: 20px;
     text-transform: uppercase;
     text-decoration: none;
     border-top: 3px solid transparent;
