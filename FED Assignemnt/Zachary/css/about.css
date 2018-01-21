@@ -5,7 +5,8 @@
 
 body {
     background-size: cover;
-    font:22px Simplifica;
+    background-attachment: fixed;
+    font: 22px Simplifica;
     background-image: url(https://i.pinimg.com/originals/58/9c/ea/589cea432c90f694b47babb8ad5f959f.jpg);
 }
 
@@ -23,8 +24,6 @@ td {
     padding-top: 10px;
     height: 100px;
     width: 300px;
-}
-
 }
 
 #middle {
@@ -49,8 +48,8 @@ h1 {
     left: 10%;
     font-size: 300%;
     border-radius: 100%;
-    width: 180px;
-    height: 120px;
+    width: 160px;
+    height: 135px;
     background-color: white;
     border: 2px solid #666;
     color: #666;
