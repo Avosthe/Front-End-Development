@@ -7,24 +7,18 @@
     background-attachment: fixed;
     text-align: center;
     background-size: cover;
+    overflow:hidden;
 }
 
-#start {
-
-    background: url("../images/test2_bg.jpg");
+#slideshow {
+    background: url("../images/slideshow1.jpg");
     background-attachment: fixed;
     text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
-    height: 80vh;
-}
-
-#filler{
-    display:inline-block;
-    top:10%;
-    height:300vh;
-    font:36px Simplifica;
+    height:100vh;
+    transition:1s ease;
 }
 
 #resize {
@@ -103,3 +97,35 @@
     }
 }
 
+#circle1, #circle2, #circle3, #circle4{
+    position:absolute;
+    width:20px;
+    height:20px;
+    background-color:grey;
+    z-index:1000;
+    border-radius:50%;
+}
+
+#circle1:hover, #circle2:hover, #circle3:hover, #circle4:hover {
+    cursor:pointer;
+}
+
+#circle1{
+    top:95%;
+    left:47%;
+}
+
+#circle2 {
+    top: 95%;
+    left: 49%;
+}
+
+#circle3 {
+    top: 95%;
+    left: 51%;
+}
+
+#circle4 {
+    top: 95%;
+    left: 53%;
+}

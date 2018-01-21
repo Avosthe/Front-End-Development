@@ -55,3 +55,49 @@ function addzero(i) {
     return i;
 }
 
+function feedback() {
+    document.getElementById("overlay").style.display = "block";
+}
+
+function fbothers() {
+    if (document.getElementById("fbtype").value == "others")
+    {
+        document.getElementById("others").style.display = "block";
+        document.getElementById("commendquestion").style.display = "none";
+        document.getElementById("staffname").style.display = "none";
+    }
+    else if (document.getElementById("fbtype").value == "commendation")
+    {
+        document.getElementById("others").style.display = "none";
+        document.getElementById("commendquestion").style.display = "block";
+        document.getElementById("commendlabel").innerHTML = "Are you commending a staff?";
+        document.getElementById("staffname").style.display = "block";
+    }
+    else
+    {
+        document.getElementById("others").style.display = "none";
+        document.getElementById("commendquestion").style.display = "block";
+        document.getElementById("commendlabel").innerHTML = "Are you complaining about a staff?";
+        document.getElementById("staffname").style.display = "block";
+
+    }
+}
+
+function staffcommend() {
+    if (document.getElementById("commendstaff").value == "no")
+    {
+        document.getElementById("staffname").style.display = "none";
+    }
+    else
+    {
+        document.getElementById("staffname").style.display = "block";
+    }
+}
+
+function closefeedback() {
+    document.getElementById("overlay").style.display = "none";
+}
+
+function alertsuccess() {
+    alert("Succesfully submitted feedback!");
+}
