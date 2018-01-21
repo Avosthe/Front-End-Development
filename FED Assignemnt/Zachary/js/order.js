@@ -53,7 +53,7 @@ function myFunction() {
     //create menuitem droplist//
     var b = document.createElement("select");
     b.setAttribute("id", "select");
-    var menu = ["1", "2", "3", "4"];
+    var menu = ["Croissants $31", "Grilled Chicken & Cheese Burger $78", "Basil Pesto Mushroom Toast $59", "Pulled Pork & Avocado Eggs Benedict $84", "Bangers & Mash $67", "Blackened Grass-Fed Sirloin $106", "Coffee Kahlua Barbeque Pork Ribs $89", "Pressed Foei Gras $129", "Decadence D’Or Cupcake $750", "Golden Opulence Sundae $1,000", "The Golden Phoenix Cupcake$1,000", "Frozen Chocolate Haute $25,000", "Capuccino $14", "Café Latte Espresso $22", "Hacienda La Esmeralda $112","Ruby Rose Cocktail $40,000"];
     for (i = 0; i < menu.length; i++) {
         var option = document.createElement("option");
         option.text = menu[i];
@@ -65,6 +65,7 @@ function myFunction() {
     quantity.setAttribute("id", "quantity");
     quantity.setAttribute("type", "number");
     quantity.setAttribute("min", 1);
+    quantity.setAttribute("value", 1);
 
     // create special request text box//
     var request = document.createElement("input");
