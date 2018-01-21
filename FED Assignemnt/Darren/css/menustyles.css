@@ -35,45 +35,45 @@ body
 #cover {
     padding-top:5px;
     float:right;
-    width: 903px;
-    height: 920px;
+    width: 50vw;
+    height: 92vh;
 }
 
 
 #breakfast {
     position: absolute;
-    top: 150%;
+    top: 130vh;
     width:80%;
 }
 
 #dinner{
     width:80%;
     position:absolute;
-    top:360%;
+    top:340vh;
 }
 
 #dessert {
     position: absolute;
-    top: 570%;
+    top: 540vh;
     width: 80%;
 }
 
 #drinks {
     position: absolute;
-    top: 780%;
+    top: 720vh;
     width: 80%;
 }
 
 
 #coffee2 {
     position: absolute;
-    top: 910%;
+    top: 8000px;
     right:10%;
 }
 
 #cocktail{
     position:absolute;
-    top:850%;
+    top:800vh;
     left:0%;
 }
 #waffles{
@@ -88,7 +88,7 @@ body
 #steak{
     position:absolute;
     z-index:-20;
-    top:520%;
+    top:520vh;
     right:-10%;
 }
 
