@@ -6,7 +6,6 @@
 body {
     background-image: url(http://www.allwhitebackground.com/images/2/2276.jpg);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-attachment:fixed;
 }
 
 form{
@@ -33,11 +32,22 @@ h1{
     font-size:40px;   
 }
 
-#myTable{
+#myTable{ 
     border:1px solid black;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-#quantity{
-    width:50px;
+.quantity{
+    width:40px;
+}
+
+.select{
+    width:250px;
+}
+
+#price{
+    background-color:white;
+    width:200px;
+    height:20px;
 }
 

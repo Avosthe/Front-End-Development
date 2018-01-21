@@ -16,7 +16,8 @@
     <form onsubmit="lul(); return false;">
         <h1>Order Form</h1>
         <button onclick="myFunction(); return false;">New Order</button>
-        <div id="orderitem"></div>
+        <div id="orderitem" onclick="price()"></div>
+        <div id="price"></div>
         <p>
             <img src="Zachary/images/deliveryguy.jpg" alt="delivery man" style="width:50px;height:50px;"/>
             <input type="radio" value="delivery" name="order" required />Delivery
@@ -29,7 +30,7 @@
                 <div>
                     <label>Name:</label><input type="text" name="name" placeholder="Enter Name" required /><br />
                 </div>
-                <div>  <label>Address:</label><textarea cols="30" rows="1" placeholder="Enter Address" required></textarea><br /></div>
+                <div>  <label>Address:</label><textarea placeholder="Enter Address" required></textarea><br /></div>
                 <div>  <label>Postal Code:</label><input type="text" maxlength="6" numeric="6" placeholder="Enter Postal Code" required /><br /></div>
                 <div> <label>Phone #:</label><input type="text" pattern="[689][0-9]{7}" placeholder="Enter Phone Number" required /><br /></div>
                 <div> <label>Email:</label><textarea cols="60" rows="1" placeholder="Enter email addresses" required></textarea><br /></div>
