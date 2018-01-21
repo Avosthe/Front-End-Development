@@ -20,6 +20,9 @@ nav {
     overflow: auto;
     width: 100%;
     box-shadow: 0 1.5px 5px 3px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 100;
+    overflow: hidden;
 }
 
 nav a {
@@ -53,7 +56,7 @@ nav a:hover{
 nav img{
     display: inline-block;
     width: 60px;
-    height: 50px;
+    height: 60px;
     vertical-align: middle;
     padding: 0 10px;
     text-align: center;
