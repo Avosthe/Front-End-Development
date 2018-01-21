@@ -8,13 +8,13 @@
 
 </head>
 <body onload="currentPage()">
-    <div w3-include-html="header.html" id="fk"></div>
+    <div w3-include-html="header.html" ></div>
 
     <script>
         w3.includeHTML();
     </script>
 
-    <div id="start">
+    <div id="slideshow">
         <div id="imageText">Café Latte</div>
         <a href="menu.html">
             <div id="menu">
@@ -27,10 +27,12 @@
             </div>
         </a>
     </div>
-    <div id="filler">
-        We aim for the best ingredients cos we gangsta
-        <!--<img src="Darren/images/sike.png" width="500" height="1000" />-->
-    </div>
+    <div class="navigation" id="circle1" onclick="firstimage()"></div>
+    <div class="navigation" id="circle2" onclick="secondimage()"></div>
+    <div class="navigation" id="circle3" onclick="thirdimage()"></div>
+    <div class="navigation" id="circle4" onclick="fourthimage()"></div>
+
     <script src="headerScript.js"></script>
+    <script src="Darren/js/indexScript.js"></script>
 </body>
 </html>
