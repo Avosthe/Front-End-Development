@@ -14,7 +14,66 @@
     <script>
         w3.includeHTML();
     </script>
+    <div id="overlay">
+        <div id="form">
+            <div id="cross" onclick="closefeedback()"> &#x2716</div>
+            <form>
+                <header>Feedback Form</header>
+                <fieldset>
+                    <p>
+                        <label>Name: </label><input type="text" placeholder="Please enter your name" />
+                    </p>
+                    <p>
+                        <label>Gender: </label><input type="radio" name="gender" />Male
+                        <input type="radio" name="gender" />Female
+                    <p>
+                        <label>Type of Feedback:</label>
+                        <select id="fbtype" onchange="fbothers()">
+                            <option value="commendation">Commendation</option>
+                            <option value="complaint">Complaint</option>
+                            <option value="others">Others...</option>
+                        </select>
+                    </p>
+                    <p>
+                        <div id="commendquestion">
+                            <label id="commendlabel">Are you commending a staff?</label>
+                            <select id="commendstaff" onchange="staffcommend()">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </div>
+                    </p>
+                    <p>
+                        <div id="staffname">
+                            <label>Who is this staff?</label>
+                            <select>
+                                <option value="JennieKim">Jennie Kim</option>
+                                <option value="NicholasCage">Nicholas Cage</option>
+                                <option value="JisooKim">Jisoo Kim</option>
+                                <option value="RosePark">Rosé Park</option>
+                                <option value="LisaManoban">Lisa Manoban</option>
+                            </select>
+                        </div>
+                    </p>
+                    <p>
+                        <div id="others">
+                            <label>What other feedback are you sending?</label>
+                            <input type="text" placeholder="Type of feedback" />
+                        </div>
+                    </p>
+                    <p>
+                        <label>Date: </label><input type="date" />
+                    </p>
+                    <p>
+                        <label>Comments: </label><textarea placeholder="Extra comments"></textarea>
+                    </p>
+                    <button onclick="alertsuccess()" type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </fieldset>
 
+            </form>
+        </div>
+    </div>
     <div id="main">
         <div id="map"></div>
 
@@ -41,6 +100,10 @@
                         <img src="Darren/images/address.png" width="20" height="20" />  BLK 112 Potong Pasir Ave 1 #07-02<br /> Singapore 023628
                     </a>
                 </p>
+                <p>
+                    <u>Submit Feedback Here:</u>
+                </p>
+                <button onclick="feedback()" id="feedbackbutton">Submit Feedback</button>
             </div>
             <div id="ophours">
 
@@ -87,10 +150,9 @@
                     </tr>
                 </table>
             </div>
-            <div id="feedbackform"></div>
             <div id="clock"></div>
             <div id="time"></div>
-            <button id="feedbackbutton">Feedback</button>
+
         </section>
 
     </div>

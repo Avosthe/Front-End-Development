@@ -10,15 +10,6 @@ body
     z-index:2;
 }
 
-#overlay{
-    background-color:white;
-    opacity:0.5;
-    z-index:0;
-    width:1000%;
-    height:1000%;
-    position:absolute;
-}
-
 #main{
     position:absolute;
     padding-left: 10%;
@@ -28,7 +19,7 @@ body
 .title {
     width: 35%;
     float: left;
-    padding-top: 200px;
+    padding-top: 10vh;
 }
 
 .ttl_menu {
