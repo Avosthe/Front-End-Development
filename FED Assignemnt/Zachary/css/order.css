@@ -1,6 +1,8 @@
 ﻿body {
     background-image: url(http://www.allwhitebackground.com/images/2/2276.jpg);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-size:cover;
+    background-attachment:fixed;
 }
 
 form{
@@ -12,14 +14,6 @@ form{
     position: absolute;
     width: 200px;
     height: 150px;
-}
-
-#container {
-    width: 435px;
-    height: 65px;
-    position: relative;
-    display:inline;
-    font-size:12px;
 }
 
 fieldset label {
@@ -56,4 +50,12 @@ nav a {
 h1{
     font-size:40px;   
 }
-    
+
+#myTable{
+    border:1px solid black;
+}
+
+#quantity{
+    width:50px;
+}
+
