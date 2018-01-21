@@ -9,7 +9,6 @@ body {
 
 nav {
     text-align: center;
-    /*background-color: rgba(255, 255, 255, 0.8);*/
     background-color: rgba(0, 0, 0, 0.8);
     margin: 0 auto;
     overflow: auto;
@@ -21,9 +20,7 @@ nav a {
     display: inline-table;
     padding: 18px 30px;
     font: bold 14px Arial;
-    /*color: black;*/
     color: silver;
-    /*background-color: rgba(255, 255, 255, 0.8);*/
     text-transform: uppercase;
     text-decoration: none;
     border-top: 3px solid transparent;
