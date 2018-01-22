@@ -21,11 +21,12 @@ function opensidenav() {
 }
 
 function changebackbuttongold() {
-    document.getElementById("backbutton").innerHTML = "<img src=\"Darren/images/backgold.png\">";
+    document.getElementById("backbutton").src = "Darren/images/backgold.png";
+
 }
 
 function changebackbuttonwhite() {
-    document.getElementById("backbutton").innerHTML = "<img src=\"Darren/images/back.png\">";
+    document.getElementById("backbutton").src = "Darren/images/back.png";
 }
 
 function closesidenav() {
