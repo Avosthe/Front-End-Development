@@ -114,19 +114,21 @@ div#ophours u{
     display: none;
     position: fixed;
     z-index: 1000;
-    padding-top: 10vh;
-    width: 100%;
-    height: 100%;
+    padding-top: 5vh;
+    width: 100vw;
+    height: 100vh;
+    background-attachment:fixed;
     background-color: rgba(0,0,0,0.5);
+    background-size:cover;
 }
 
 #form {
-    padding:0px 30px 70px 30px;
+    padding:0px 30px 20px 30px;
     font: 20px Simplifica;
     background-color: #eeeeee;
     margin:auto;
     width: 550px;
-    height: 40%;
+    height: 470px;
     z-index: 1001;
     border-radius: 30px;
     border: 3px solid darkgoldenrod;
@@ -192,4 +194,3 @@ label{
         width: 6vw;
     }
 }
-

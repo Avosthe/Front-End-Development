@@ -11,6 +11,7 @@
     <link rel="icon" type="image/x-icon" href="JingJie/multimedia/coffee.png" />
     <script src="JingJie/js/script.js" defer></script>
     <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="headerScript.js" defer></script>
 </head>
 
 <body>
@@ -173,7 +174,6 @@
     <section id="slideshow-container">
         <div id="slideshow">
             <div class="overlay">
-                <div id="ss-left-half"></div>
                 <div id="ss-right-half">
                     <div id="ss-caption-div">
                         <div id="ss-coffee-div">
@@ -288,7 +288,7 @@
                             </li>
                             <li>
                                 You will deliver a high-quality menu and motivate our staff to
-                                provide excellent customer service. The minimal requirement is a diploma.
+                                provide excellent customer service. Diploma or higher required.
                             </li>
                         </ul>
                         <button class="button-theme-1" onclick="showHideJob2()"><span class="span-theme-1">Apply Now</span></button>
@@ -372,6 +372,12 @@
                     </tr>
                 </tbody>
             </table>
+            <div class="video-btm">
+                <video src="JingJie/multimedia/Waiter-Job-Video.mp4"
+                       controls poster="JingJie/multimedia/Waiter-Job-Video-Thumbnail.png">
+                    <p>Your browser does not support videos.</p>
+                </video>
+            </div>
             <div class="form-header">
                 <h2>Apply Now</h2>
                 <img class="apply-form-image" src="JingJie/multimedia/apply.png" alt="Apply Now" />
@@ -407,6 +413,7 @@
                     <input id="applicant-photo" name="applicant-photo" type="file" accept=".png, .jpg, .jpeg" />
                 </div>
                 <div class="form-submit">
+                    <input id="reseti" type="reset" />
                     <button class="button-theme-1 form-button" type="submit"><span class="span-theme-1">Submit</span></button>
                     <img src="JingJie/multimedia/submit.png" alt="submit form" />
                 </div>
@@ -469,10 +476,16 @@
                     </tr>
                 </tbody>
             </table>
-            <div class="form-header">
-                <h2>Apply Now</h2>
-                <img class="apply-form-image" src="JingJie/multimedia/apply.png" alt="Apply Now" />
+            <div class="video-btm">
+                <video src="JingJie/multimedia/Restaurant-Manager-Job-Video.mp4"
+                       controls poster="JingJie/multimedia/Restaurant-Manager-Job-Video-Thumbnail.png">
+                    <p>Your browser does not support videos.</p>
+                </video>
             </div>
+                <div class="form-header">
+                    <h2>Apply Now</h2>
+                    <img class="apply-form-image" src="JingJie/multimedia/apply.png" alt="Apply Now" />
+                </div>
             <form id="job-form-2" class="job-applicant-form">
                 <div class="form-top-bottom-level">
                     <input name="applicant-name" type="text" placeholder="Name" required />
@@ -504,6 +517,7 @@
                     <input id="applicant-photo" name="applicant-photo" type="file" accept=".png, .jpg, .jpeg" />
                 </div>
                 <div class="form-submit">
+                    <input id="reseti" type="reset" />
                     <button class="button-theme-1 form-button" type="submit"><span class="span-theme-1">Submit</span></button>
                     <img src="JingJie/multimedia/submit.png" alt="submit form" />
                 </div>
@@ -571,6 +585,12 @@
                     </tr>
                 </tbody>
             </table>
+            <div class="video-btm">
+                <video src="JingJie/multimedia/Chef-Job-Video.mp4"
+                       controls poster="JingJie/multimedia/Chef-Job-Video-Thumbnail.png">
+                    <p>Your browser does not support videos.</p>
+                </video>
+            </div>
             <div class="form-header">
                 <h2>Apply Now</h2>
                 <img class="apply-form-image" src="JingJie/multimedia/apply.png" alt="Apply Now" />
@@ -606,6 +626,7 @@
                     <input id="applicant-photo" name="applicant-photo" type="file" accept=".png, .jpg, .jpeg" />
                 </div>
                 <div class="form-submit">
+                    <input id="reseti" type="reset" />
                     <button class="button-theme-1 form-button" type="submit"><span class="span-theme-1">Submit</span></button>
                     <img src="JingJie/multimedia/submit.png" alt="submit form" />
                 </div>
@@ -666,6 +687,7 @@
             <path d="M35.707,16.293c-0.391-0.391-1.023-0.391-1.414,0L26,24.586l-8.293-8.293c-0.391-0.391-1.023-0.391-1.414,0   s-0.391,1.023,0,1.414L24.586,26l-8.293,8.293c-0.391,0.391-0.391,1.023,0,1.414C16.488,35.902,16.744,36,17,36   s0.512-0.098,0.707-0.293L26,27.414l8.293,8.293C34.488,35.902,34.744,36,35,36s0.512-0.098,0.707-0.293   c0.391-0.391,0.391-1.023,0-1.414L27.414,26l8.293-8.293C36.098,17.316,36.098,16.684,35.707,16.293z" fill="#006DF0" />
 
             <div id="cto-info-left" class="cto-info">
+            <img src="JingJie/multimedia/coffee.png" alt="Company Logo"/>
             <h1>Chee Jing Jie</h1>
             <h2>Founder & Chief Information Officer</h2>
             <hr />
@@ -683,12 +705,17 @@
             </div>
             <div id="cto-info-right" class="cto-info">
                     <img id="cto-swaggy-picture" src="JingJie/multimedia/cto-swaggy-picture.jpg" alt="CTO is cool" />
+                    <img src="JingJie/multimedia/cto-swaggy-picture.jpg" alt="CTO is cool" />
             </div>
         </section>
     </section>
     
 
     </section>
+
+    <footer>
+        <p>Developed by Chee Jing Jie &copy; 2018</p>
+    </footer>
 
 </body>
 

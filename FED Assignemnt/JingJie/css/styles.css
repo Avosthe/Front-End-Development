@@ -1,9 +1,9 @@
 ﻿
+
 /* Global & Header */
 
 html {
     box-sizing: border-box;
-    min-width: 1220px;
 }
 
 *, *:before, *:after {
@@ -26,10 +26,11 @@ html {
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    min-width: 480px;
 }
 
 #main-content-wrapper{
-    display: none;
+    /*display: none;*/
 }
 
 nav img{
@@ -46,7 +47,7 @@ nav img{
     left: 0;
     z-index: 200;
     background-color: rgba(0, 0, 0, 0.75);
-    /*display: none;*/
+    display: none;
 }
 
 .popup {
@@ -371,12 +372,12 @@ header img{
 }
 
 /* Split SlideShow into 2 Halves */
-#ss-left-half {
+/*#ss-left-half {
     float: left;
     width: 50%;
     height: 100%;
     margin: 0;
-}
+}*/
 
 #ss-right-half {
     float: right;
@@ -499,7 +500,8 @@ header img{
 /* Qualities Section */
 
 #qualities-container {
-    height: 300px;
+    padding: 60px 0;
+    /*height: 300px;*/
     background-color: #f4f7f6;
     margin: 0;
 }
@@ -586,7 +588,6 @@ header img{
 /* Main */
 
 main{
-    height: 700px;
     background: url(../multimedia/light-bulb-bg.jpg);
     overflow: hidden;
 }
@@ -610,6 +611,7 @@ main h1{
 
 #available-jobs > div{
     display: table-cell;
+    padding-bottom: 80px;
 }
 
 #available-jobs li{
@@ -714,6 +716,7 @@ main h1{
     overflow: scroll;
     opacity: 0;
     transition: all 0.8s;
+    min-width: 920px;
 }
 
 @keyframes fadeOut{
@@ -766,6 +769,12 @@ video{
 .job-specifications-table{
     padding: 20px;
     width: 100%;
+}
+
+.video-btm video{
+    display: none;
+    margin-left: 20vw;
+    margin-bottom: 50px;
 }
 
 .job-specifications-table th, td{
@@ -976,7 +985,7 @@ video{
 #cto-information{
     background-color: #f4f4f4;
     opacity: 1;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 @keyframes slideFromRight {
@@ -1004,11 +1013,25 @@ video{
 
 #cto-info-left{
     width: 40%;
+    text-align: left;
+}
+
+#cto-info-left img{
+    padding-top: 40px;
+}
+
+#cto-info-left h1{
+    clear: both;
 }
 
 #cto-info-right{
     float: right;
     width: 50%;
+}
+
+#cto-info-right img:last-of-type{
+    width: 100%;
+    display: none;
 }
 
 #cto-swaggy-picture{
@@ -1031,16 +1054,16 @@ video{
 }
 
 .cto-zoom-in{
-    animation: cto-zoom-in 40s;
+    animation: cto-zoom-in 30s;
 }
 
 #cto-information h1 {
-    padding-top: 60px;
+    padding-top: 20px;
     font-family: Proxima-Nova-Regular;
     color: black;
     text-align: left;
     font-size: 50px;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 #cto-information h2 {
@@ -1064,5 +1087,117 @@ video{
     line-height: 2em;
     clear: both;
     font-family: Coda-Regular;
+
+}
+
+/* Footer */
+footer{
+    padding: 10px 0;
+    background-color: black;
+}
+
+footer p{
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-family: SIMPLIFICA Typeface;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1125px) {
+
+    #ss-right-half {
+        width: 100%;
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #ss-right-half h1{
+        font-size: 110px;
+    }
+
+    #ss-right-half img{
+        width: 100px;
+        height: 100px;
+    }
+    #qualities {
+        padding: 0;
+    }
+
+    #available-jobs > div{
+        display: table-row;
+    }
+    #qualities > div{
+        display: block;
+    }
+    #qualities div:first-of-type, #qualities div:nth-child(2){
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    #main-content-wrapper header h1{
+        font-size: 50px;
+    }
+
+    #mute, #speaker{
+        width: 30px;
+        height: 30px;
+        margin-left: 5px;
+    }
+
+    #ss-right-half h1 {
+        font-size: 70px;
+    }
+
+    #ss-right-half img {
+        width: 80px;
+        height: 80px;
+    }
+
+}
+
+@media screen and (max-width: 1300px){
+    .job-specifications-table video{
+        display: none;
+    }
+    .video-btm video{
+        display: initial;
+    }
+
+}
+
+@media screen and (max-width: 920px){
+    .job-specifications-table video {
+        display: none;
+    }
+
+    .video-btm video {
+        display: initial;
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width: 1290px){
+    
+    #cto-info-right img:first-of-type{
+        display: none;
+    }
+    #cto-info-right img:last-of-type{
+        display: initial;
+    }
+
+}
+
+@media screen and (max-width: 920px) {
+
+    #cto-info-right img {
+        width: 250px;
+        height: 500px;
+    }
 
 }

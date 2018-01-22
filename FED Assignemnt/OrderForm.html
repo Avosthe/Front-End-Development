@@ -19,29 +19,30 @@
         <div id="orderitem" onclick="price()"></div>
         <div id="price"></div>
         <p>
-            <img src="Zachary/images/deliveryguy.jpg" alt="delivery man" style="width:50px;height:50px;"/>
+            <img src="Zachary/images/deliveryguy.jpg" alt="delivery man" style="width:50px;height:50px;" />
             <input type="radio" value="delivery" name="order" required />Delivery
             <input type="radio" value="pickup" name="order" />Pick Up
-            <img src="Zachary/images/takeaway.jpg" alt="takeaway" style="background:white;width:50px;height:50px;"/>
+            <img src="Zachary/images/takeaway.jpg" alt="takeaway" style="background:white;width:50px;height:50px;" />
         </p>
         <p>
-            <fieldset style="width:200px;">
+            <fieldset style="width:400px;">
                 <legend>Deliver to:*</legend>
                 <div>
                     <label>Name:</label><input type="text" name="name" placeholder="Enter Name" required /><br />
                 </div>
-                <div>  <label>Address:</label><textarea placeholder="Enter Address" required></textarea><br /></div>
-                <div>  <label>Postal Code:</label><input type="text" maxlength="6" numeric="6" placeholder="Enter Postal Code" required /><br /></div>
-                <div> <label>Phone #:</label><input type="text" pattern="[689][0-9]{7}" placeholder="Enter Phone Number" required /><br /></div>
-                <div> <label>Email:</label><textarea cols="60" rows="1" placeholder="Enter email addresses" required></textarea><br /></div>
+                <div>  <label>Address:</label><textarea placeholder="Enter Address" style="width:200px;" required></textarea><br /></div>
+                <div>  <label>Postal Code:</label><input type="text" maxlength="6" pattern="[1-9]{6}" placeholder="Enter Postal Code" required /><br /></div>
+                <div> <label>Phone #:</label><input type="text" maxlength="8" pattern="[689][0-9]{7}" placeholder="Enter Phone Number" required /><br /></div>
+                <div> <label>Email:</label><input placeholder="Enter email addresses" type="email" required><br /></div>
                 <div>  <label>Date:</label><input id="date" type="date" name="Date" min="" max="" placeholder="mm/dd/yy" required /><br /></div>
-                <div>  <label>Time:</label><input id="time" type="time" name="Time" min="10:00:00" max="21:00:00" step="15"     required /><br /><br /></div>
+                <div>  <label>Time:</label><input id="time" type="time" name="Time" min="10:00:00" max="21:00:00" step="15" required /><br /><br /></div>
                 <button type="submit">Submit</button>
                 <button type="reset" value="Reset">Reset</button>
             </fieldset>
         </p>
     </form>
-        <div id="animate"></div>
+    <div id="animate"></div>
+    <footer>By Zachary</footer>
     <script src="headerScript.js"></script>
 </body>
 </html>
