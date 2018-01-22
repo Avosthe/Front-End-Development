@@ -1049,6 +1049,10 @@ video{
     animation: cto-zoom-in 30s;
 }
 
+#cto-information{
+    min-width: 1270px;
+}
+
 #cto-information h1 {
     padding-top: 20px;
     font-family: Proxima-Nova-Regular;
