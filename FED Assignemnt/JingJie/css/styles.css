@@ -33,6 +33,10 @@ body {
     display: none;
 }
 
+footer{
+    display: none;
+}
+
 nav img{
     height: 70px;
 }
