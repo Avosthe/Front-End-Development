@@ -30,7 +30,7 @@ body {
 }
 
 #main-content-wrapper{
-    /*display: none;*/
+    display: none;
 }
 
 nav img{
@@ -47,7 +47,7 @@ nav img{
     left: 0;
     z-index: 200;
     background-color: rgba(0, 0, 0, 0.75);
-    display: none;
+    /*display: none;*/
 }
 
 .popup {
