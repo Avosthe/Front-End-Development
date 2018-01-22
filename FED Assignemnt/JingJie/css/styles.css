@@ -985,8 +985,7 @@ video{
 #cto-information{
     background-color: #f4f4f4;
     opacity: 1;
-    overflow: hidden;
-    min-width: 1200px;
+    overflow-x: hidden;
 }
 
 @keyframes slideFromRight {
@@ -1021,9 +1020,18 @@ video{
     padding-top: 40px;
 }
 
+#cto-info-left h1{
+    clear: both;
+}
+
 #cto-info-right{
     float: right;
     width: 50%;
+}
+
+#cto-info-right img:last-of-type{
+    width: 100%;
+    display: none;
 }
 
 #cto-swaggy-picture{
@@ -1047,10 +1055,6 @@ video{
 
 .cto-zoom-in{
     animation: cto-zoom-in 30s;
-}
-
-#cto-information{
-    min-width: 1270px;
 }
 
 #cto-information h1 {
@@ -1176,4 +1180,24 @@ footer p{
         display: initial;
         margin-left: 100px;
     }
+}
+
+@media screen and (max-width: 1290px){
+    
+    #cto-info-right img:first-of-type{
+        display: none;
+    }
+    #cto-info-right img:last-of-type{
+        display: initial;
+    }
+
+}
+
+@media screen and (max-width: 920px) {
+
+    #cto-info-right img {
+        width: 250px;
+        height: 500px;
+    }
+
 }
