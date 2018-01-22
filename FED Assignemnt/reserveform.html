@@ -5,19 +5,128 @@
     <meta charset="utf-8" />
     <title>Make A Reservation</title>
     <link rel="stylesheet" href="ZhiPeng/css/reserve.css" />
-    <link rel="icon" href="Jingjie/multimedia/coffee.png" />
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="ZhiPeng/js/reserveform.js"></script>
+    <link rel="icon" href="Jingjie/multimedia/coffee.png" />
 </head>
 <body onload="currentPage()">
-    <div w3-include-html="header.html"></div>
+    <div w3-include-html="header.html" id="header-div"></div>
 
     <script>
         w3.includeHTML();
     </script>
-    <section>
+   
+    <section onclick="testde()">
+        <table>
+            <tr>
+                <th>Slot Number</th>
+                <th scope="col">Time Slots</th>
+                <th scope="col" colspan="1">Days</th>
+            </tr>
+            <tr>
+                <th scope="row">1</th>
+                <th scope="row">10:00-11:30</th>
+                <td rowspan="1">Weekdays, Saturday, Sunday</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <th scope="row">10:30-12:00</th>
+                <td rowspan="1">Weekdays, Saturday, Sunday</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <th scope="row">11:00-12:30</th>
+                <td rowspan="1">Weekdays, Saturday, Sunday</td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <th scope="row">11:30-13:00</th>
+                <td rowspan="1">Weekdays, Saturday, Sunday</td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <th scope="row">12:00-13:30</th>
+                <td>Weekdays, Saturday, Sunday</td>
+            </tr>
+            <tr>
+                <th scope="row">6</th>
+                <th scope="row">12:30-14:00</th>
+                <td rowspan="1">Weekdays, Saturday, Sunday</td>
+            </tr>
+            <tr><th scope="row">7</th>
+                <th scope="row">13:00-14:30</th>
+                <td rowspan="1">Weekdays, Saturday, Sunday</td>
+            <tr>
+                <th scope="row">8</th>
+                <th scope="row">13:30-15:00</th>
+                <td rowspan="1">Weekdays, Saturday, Sunday</td>
+            </tr>
+            <tr>
+                <th scope="row">9</th>
+                <th scope="row">14:00-15:30</th>
+                <td rowspan="1">Weekdays, Saturday</td>
+            </tr>
+            <tr>
+                <th scope="row">10</th>
+                <th scope="row">14:30-16:00</th>
+                <td rowspan="1">Weekdays, Saturday</td>
+            </tr>
+            <tr>
+                <th scope="row">11</th>
+                <th scope="row">15:00-16:30</th>
+                <td rowspan="1">Weekdays</td>
+            </tr>
+            <tr>
+                <th scope="row">12</th>
+                <th scope="row">15:30-17:00</th>
+                <td rowspan="1">Weekdays</td>
+            </tr>
+            <tr>
+                <th scope="row">13</th>
+                <th scope="row">16:00-17:30</th>
+                <td rowspan="1">Weekdays</td>
+            </tr>
+            <tr>
+                <th scope="row">14</th>
+                <th scope="row">16:30-18:00</th>
+                <td rowspan="1">Weekdays</td>
+            </tr>
+            <tr>
+                <th scope="row">15</th>
+                <th scope="row">17:00-18:30</th>
+                <td rowspan="1">Weekdays</td>
+            </tr>
+            <tr>
+                <th scope="row">16</th>
+                <th scope="row">17:30-19:00</th>
+                <td rowspan="1">Weekdays</td>
+            </tr>
+            <tr>
+                <th scope="row">17</th>
+                <th scope="row">18:00-19:30</th>
+                <td rowspan="1">Weekdays</td>
+            </tr>
+            <tr>
+                <th scope="row">18</th>
+                <th scope="row">18:30-20:00</th>
+                <td rowspan="1">Weekdays</td>
+            </tr>
+            <tr>
+                <th scope="row">19</th>
+                <th scope="row">19:00-20:30</th>
+                <td rowspan="1">Weekdays</td>
+            </tr>
+            <tr>
+                <th scope="row">20</th>
+                <th scope="row">19:30-21:00</th>
+                <td rowspan="1">Weekdays</td>
+            </tr>
+        </table>
 
-        <img src="ZhiPeng/images/6.jpg" />
+        <img src="ZhiPeng/images/6.jpg" class="iimg"/>
+
 
         <form class="container">
 
@@ -59,12 +168,13 @@
 
                 <div>
                     <br /><button type="reset" class="cancel">Reset</button>
-                    <button type="submit" id="sub" class="sub">Submit</button>
+                    <button type="submit" id="sub" class="sub" onclick="testde()">Submit</button>
                 </div>
-                
+
             </main>
         </form>
     </section>
+    <script src="headerScript.js"></script>
 
 
 </body>

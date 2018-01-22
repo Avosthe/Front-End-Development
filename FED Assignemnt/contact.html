@@ -10,11 +10,6 @@
 
 </head>
 <body onload="status(); currentPage();">
-    <div w3-include-html="header.html"></div>
-
-    <script>
-        w3.includeHTML();
-    </script>
     <div id="overlay">
         <div id="form">
             <div id="cross" onclick="closefeedback()"> &#x2716</div>
@@ -75,6 +70,13 @@
             </form>
         </div>
     </div>
+    <div w3-include-html="header.html"></div>
+
+    <script>
+        w3.includeHTML();
+    </script>
+    
+
     <div id="main">
         <div id="map"></div>
 
