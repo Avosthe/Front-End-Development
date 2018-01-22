@@ -1,9 +1,9 @@
 ﻿
+
 /* Global & Header */
 
 html {
     box-sizing: border-box;
-    min-width: 1220px;
 }
 
 *, *:before, *:after {
@@ -26,6 +26,7 @@ html {
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    min-width: 480px;
 }
 
 #main-content-wrapper{
@@ -371,12 +372,12 @@ header img{
 }
 
 /* Split SlideShow into 2 Halves */
-#ss-left-half {
+/*#ss-left-half {
     float: left;
     width: 50%;
     height: 100%;
     margin: 0;
-}
+}*/
 
 #ss-right-half {
     float: right;
@@ -499,7 +500,8 @@ header img{
 /* Qualities Section */
 
 #qualities-container {
-    height: 300px;
+    padding: 60px 0;
+    /*height: 300px;*/
     background-color: #f4f7f6;
     margin: 0;
 }
@@ -586,7 +588,6 @@ header img{
 /* Main */
 
 main{
-    height: 700px;
     background: url(../multimedia/light-bulb-bg.jpg);
     overflow: hidden;
 }
@@ -610,6 +611,7 @@ main h1{
 
 #available-jobs > div{
     display: table-cell;
+    padding-bottom: 80px;
 }
 
 #available-jobs li{
@@ -714,6 +716,7 @@ main h1{
     overflow: scroll;
     opacity: 0;
     transition: all 0.8s;
+    min-width: 920px;
 }
 
 @keyframes fadeOut{
@@ -766,6 +769,12 @@ video{
 .job-specifications-table{
     padding: 20px;
     width: 100%;
+}
+
+.video-btm video{
+    display: none;
+    margin-left: 20vw;
+    margin-bottom: 50px;
 }
 
 .job-specifications-table th, td{
@@ -977,6 +986,7 @@ video{
     background-color: #f4f4f4;
     opacity: 1;
     overflow: hidden;
+    min-width: 1200px;
 }
 
 @keyframes slideFromRight {
@@ -1065,4 +1075,81 @@ video{
     clear: both;
     font-family: Coda-Regular;
 
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1125px) {
+
+    #ss-right-half {
+        width: 100%;
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #ss-right-half h1{
+        font-size: 110px;
+    }
+
+    #ss-right-half img{
+        width: 100px;
+        height: 100px;
+    }
+    #qualities {
+        padding: 0;
+    }
+
+    #available-jobs > div{
+        display: table-row;
+    }
+    #qualities > div{
+        display: block;
+    }
+    #qualities div:first-of-type, #qualities div:nth-child(2){
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    #main-content-wrapper header h1{
+        font-size: 50px;
+    }
+
+    #mute, #speaker{
+        width: 30px;
+        height: 30px;
+        margin-left: 5px;
+    }
+
+    #ss-right-half h1 {
+        font-size: 70px;
+    }
+
+    #ss-right-half img {
+        width: 80px;
+        height: 80px;
+    }
+
+}
+
+@media screen and (max-width: 1300px){
+    .job-specifications-table video{
+        display: none;
+    }
+    .video-btm video{
+        display: initial;
+    }
+
+}
+
+@media screen and (max-width: 920px){
+    .job-specifications-table video {
+        display: none;
+    }
+
+    .video-btm video {
+        display: initial;
+        margin-left: 100px;
+    }
 }
