@@ -781,6 +781,10 @@ video{
     margin-bottom: 50px;
 }
 
+th:hover, td:hover, tr:hover{
+    background-color: white;
+}
+
 .job-specifications-table th, td{
     padding: 20px;
 }

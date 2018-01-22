@@ -40,7 +40,6 @@ function checkBirthday() {
 
 }
 
-
 function closeModalDialog() {
     var modalDialog = document.getElementById("glass-modal");
     modalDialog.style.visibility = "hidden";
