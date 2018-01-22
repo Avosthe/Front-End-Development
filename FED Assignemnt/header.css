@@ -14,7 +14,6 @@ body {
 
 nav {
     text-align: center;
-    /*background-color: rgba(255, 255, 255, 0.8);*/
     background-color: rgba(0, 0, 0, 1);
     margin: 0 auto;
     overflow: auto;
@@ -29,9 +28,7 @@ nav a {
     display: inline-table;
     padding: 18px 30px;
     font: bold 14px Arial;
-    /*color: black;*/
     color: silver;
-    /*background-color: rgba(255, 255, 255, 0.8);*/
     font-family: YanoneKaffeesatz-Bold;
     font-size: 20px;
     text-transform: uppercase;
@@ -75,7 +72,7 @@ nav img:hover{
     position: fixed;
     background-color: rgba(0, 0, 0, 0.95);
     overflow-x: hidden;
-    z-index: 101;
+    z-index: 9999;
     text-align:left;
     transition:0.5s;
 }
