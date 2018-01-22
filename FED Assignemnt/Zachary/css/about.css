@@ -75,3 +75,11 @@ th {
     position: absolute;
     opacity: 0.5;
 }
+
+footer{
+    position:absolute;
+    bottom:10px;
+    color:black;
+    z-index:3;
+    left:10px;
+}
