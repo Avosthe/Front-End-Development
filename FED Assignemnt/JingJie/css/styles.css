@@ -1077,6 +1077,21 @@ video{
 
 }
 
+/* Footer */
+footer{
+    padding: 10px 0;
+    background-color: black;
+}
+
+footer p{
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-family: SIMPLIFICA Typeface;
+    font-size: 25px;
+    font-weight: bold;
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 1125px) {
