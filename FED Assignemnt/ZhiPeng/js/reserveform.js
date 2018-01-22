@@ -44,7 +44,8 @@ function slots() {
 
 }
 
-function test() {
+function testde() {
+ 
     var pax = document.getElementById("seats").value;
     if (pax == 1) {
         deposit = 1 * 5;
@@ -69,5 +70,6 @@ function test() {
     else if (pax == 6) {
         deposit = 6 * 5;
     }
-    document.getElementById("deposit").innerHTML = "Deposit: <u>$" + deposit + "</u>";
+    document.getElementById("deposit").innerHTML = "</br>Deposit: <u>$" + deposit + "</u>";
+
 }

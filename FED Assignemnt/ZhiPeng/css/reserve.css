@@ -3,7 +3,8 @@ body {
     box-sizing: border-box;
     background: url("../images/4.jpg");
     color: black;
-    font: bold 24px Simplifica
+    font: bold 24px Simplifica;
+    overflow: scroll;
 }
 
 .b{
@@ -42,17 +43,32 @@ form {
     background-color: peru;
     float: right;
     display: block;
-    width: 600px;
+    width: 590px;
     height: 630px;
-    margin-right: 7.5%;
+    margin-right: 7%;
     opacity: 1;
 }
 
-img{
+.iimg{
     float:left;
-    margin-left: 7.5%;
-    height: 630px;
+    margin-left: 7%;
+    height: 660px;
 }
 .background{
     background-color: antiquewhite;
+}
+table{
+    font-family: Arial, Helvetica, sans-serif;
+    float:right;
+    display:block;
+    margin-right: 7%;
+    margin-top:-2px;
+    height: 660px;
+        
+}
+
+table,th,td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    background-color: darkgoldenrod;
 }
