@@ -45,6 +45,7 @@ function closeModalDialog() {
     var modalDialog = document.getElementById("glass-modal");
     modalDialog.style.visibility = "hidden";
     document.getElementById("main-content-wrapper").style.display = "initial";
+    document.querySelector("footer").style.display = "block";
     var bg_music = document.querySelector("audio");
     bg_music.play();
 }
